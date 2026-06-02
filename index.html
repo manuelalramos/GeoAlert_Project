@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GeAlert - Home</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <script src="./assets/js/script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="icon" type="image/svg" href="./assets/media/logo-geoalert.svg">
-
+    <link rel="icon" type="image/svg" href="./assets/media/logo-geoalert.svg" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html"><img src="./assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"></a>
-        <button>Menu</button>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="logo" href="./index.html"
+          ><img src="./assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"
+        /></a>
+
+        <button class="botao-menu" type="button">Menu</button>
+
+        <ul class="navbar-links">
+          <li><a class="active" href="./index.html">Home</a></li>
           <li><a href="./pages/integrantes.html">Integrantes</a></li>
           <li><a href="./pages/sobre.html">Sobre</a></li>
           <li><a href="./pages/solucao.html">Solução</a></li>
@@ -33,96 +39,112 @@
     </header>
 
     <main>
-        <section>
-            <div>
-                <p>Global Solution 2026</p>
-                <h1><img src="./assets/media/hero-geoalert.svg" alt="GeoAlert"></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus, maxime dolor corrupti consectetur molestiae!</p>
-            </div>
-            <div>
-                <a href="#sobre-home">Conheça o projeto</a>
-            </div>
-        </section>
+      <section class="hero">
+        <div class="container hero-conteudo">
+          <p class="hero-subtitle">Global Solution 2026</p>
+          <h1 class="hero-title">
+            <img src="./assets/media/hero-geoalert.svg" alt="GeoAlert" />
+          </h1>
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus, maxime dolor corrupti consectetur molestiae!
+          </p>
+        </div>
+        <div>
+          <a class="botao" href="#sobre-home">Conheça o projeto</a>
+        </div>
+      </section>
 
-        <section>
-            <div>
-                <p id="sobre-home">Sobre</p>
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum neque facere hic itaque ea blanditiis repellendus aspernatur corrupti atque animi nam, at quisquam dolorem deleniti vitae repudiandae velit officiis facilis!</p>
-                <a href="./pages/sobre.html">Saiba mais</a>
-                <aside>
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nesciunt quaerat sit ratione sunt, accusamus qui a voluptas.</p>
-                </aside>
-            </div>
-        </section>
-
-        <section>
-            <div>
-              <p>Alertas</p>
-              <h2>Alertas Recentes</h2>
-              
-              <div>
-                <article>
-                  <div>
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <span>Lorem</span>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos expedita necessitatibus.</p>
-                </article>
-                
-                <article>
-                  <div>
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <span>Lorem</span>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos expedita necessitatibus.</p>
-                </article>
-
-                <a href="./pages/alertas.html">Ver todos os alertas</a>
-                
-              </div>
-            </div>
-        </section>
-
-        <section>
+      <section class="section section-sobre-home" id="sobre-home">
+        <div class="container sobre-home-grid">
           <div>
-            <p>ODS</p>
-            <h2>Objetivos relacionados</h2>
-
-            <div>
-              <article>
-                <span>09</span>
-                <h3>Indústria, inovação e infraestrutura</h3>
-                <p>Uso de tecnologia para organizar dados e apoiar ações de prevenção</p>
-              </article>
-
-               <article>
-                <span>11</span>
-                <h3>Cidades e comunidades sustentáveis</h3>
-                <p>Comunidades mais preparadas para eventos extremos.</p>
-              </article>
-
-               <article>
-                <span>13</span>
-                <h3>Ação contra a mudança global do clima</h3>
-                <p>Resposta e adaptação aos impactos climáticos</p>
-              </article>
-
-            </div>
+            <p class="section-p">Sobre</p>
+            <h2 class="section-title">Lorem ipsum dolor sit amet.</h2>
+            <p class="section-class">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum neque facere hic itaque ea blanditiis repellendus aspernatur corrupti atque animi nam, at quisquam dolorem deleniti vitae repudiandae velit officiis facilis!
+            </p>
+            <a href="./pages/sobre.html">Saiba mais</a>
           </div>
-        </section>
 
+          <aside class="card sobre-card">
+            <h3>Lorem, ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nesciunt quaerat sit ratione sunt, accusamus qui a voluptas.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <p class="section-p">Alertas</p>
+          <h2 class="section-title">Alertas Recentes</h2>
+
+          <div class="home-alertas">
+            <article class="alerta-card emergencia">
+              <div class="alerta-topo">
+                <h3>Lorem, ipsum dolor.</h3>
+                <span class="nivel">Lorem</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos expedita necessitatibus.
+              </p>
+            </article>
+
+            <article class="home-alertas alerta">
+              <div class="alerta-topo">
+                <h3>Lorem, ipsum dolor.</h3>
+                <span class="nivel">Lorem</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos expedita necessitatibus.
+              </p>
+            </article>
+
+            <a class="botao" href="./pages/alertas.html">Ver todos os alertas</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section home-ods">
+        <div class="container">
+          <p class="section-p">ODS</p>
+          <h2 class="section-title">Objetivos relacionados</h2>
+
+          <div class="ods-grid">
+            <article class="ods-card ods-9">
+              <span>09</span>
+              <h3>Indústria, inovação e infraestrutura</h3>
+              <p>
+                Uso de tecnologia para organizar dados e apoiar ações de prevenção
+              </p>
+            </article>
+
+            <article class="ods-card ods-11">
+              <span>11</span>
+              <h3>Cidades e comunidades sustentáveis</h3>
+              <p>Comunidades mais preparadas para eventos extremos.</p>
+            </article>
+
+            <article class="ods-card ods-13">
+              <span>13</span>
+              <h3>Ação contra a mudança global do clima</h3>
+              <p>Resposta e adaptação aos impactos climáticos</p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <div>
-        <div>
-          <a href="./index.html"><img src="./assets/media/logo-geoalert.svg" alt="Logo GeoAlert"></a>
-          <p>GeoAlert é um projeto acadêmico de alerta precoce para desastres naturais.</p>
+    <footer class="footer">
+      <div class="container footer-conteudo">
+        <div class="footer-marca">
+          <a class="footer-logo" href="./index.html"><img src="./assets/media/logo-geoalert.svg" alt="Logo GeoAlert"/></a>
+          <p>
+            GeoAlert é um projeto acadêmico de alerta precoce para desastres naturais.
+          </p>
         </div>
 
-        <nav>
+        <nav class="footer-links">
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./pages/integrantes.html">Integrantes</a></li>
@@ -134,18 +156,20 @@
           </ul>
         </nav>
 
-        <address>
-          <h2>Contato</h2>
+        <address class="footer-contato">
+          <h2 class="footer-title">Contato</h2>
           <a href="mailto:contato@geoalert.com">contato@geoalert.com</a>
 
           <p>São Paulo - SP</p>
         </address>
 
-        <p>Site pensado para acessibilidade usando aria-label. Qualquer erro <a href="./pages/contato.html">entre em contato</a><p>
-
-        <small>
-          &copy; GeoAlert - Projeto acadêmico FIAP 2026.
-        </small>
+        <p class="footer-acessebilidade">
+          Site pensado para acessibilidade usando aria-label. Qualquer erro
+          <a href="./pages/contato.html">entre em contato</a>
+        </p>
+        
+        <small class="footer-bottom"> &copy; GeoAlert - Projeto acadêmico FIAP 2026. </small>
+        
       </div>
     </footer>
   </body>
