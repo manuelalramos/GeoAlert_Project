@@ -42,8 +42,77 @@ a{
     color: inherit;
 }
 
+ul{
+    list-style-type: none;
+}
+
 button, address, select, textarea{
     font: inherit;
 }
 
 
+.container{
+    width: 90%;
+    min-width: 110rem;
+    margin: 0 auto;
+}
+
+.section{
+    padding: 7rem 0;
+}
+
+.section-p{
+    display: inline-block;
+    margin-bottom: 1.2rem;
+    color: var(--color-amarelo);
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-title{
+    max-width: 70rem;
+    margin-bottom: 1.6rem;
+    font-size: clamp(3rem, 5vw, 5rem);
+}
+
+.section-text{
+    min-width: 68rem;
+    color: var(--text-color-segundaria);
+    font-size: 1.8rem;
+}
+
+.botao{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4.4rem;
+    padding: 1.1rem 1.8rem;
+    border-radius: 12px;
+    background: var(--color-amarelo);
+    color: var(--color-preto);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    border: 0.1rem solid var(--color-amarelo);
+}
+
+.botao:hover {
+    transition: 0.5s ease;
+    scale: 1.02;
+    background: var(--color-offwhite);
+}
+
+.card {
+    border: 0.1rem solid var(--linha);
+    border-radius: 1.2rem;
+    background: var(--card-color);
+    box-shadow: var(--sombras);
+    transition: 0.2s ease-out;
+}
+
+.card:hover {
+    transition: 0.5s ease;
+    scale: 1.01;
+    border-color: rgba(227, 175, 100, 0.42);
+}
