@@ -10,6 +10,7 @@
   --font-segundaria: Georgia, "Times New Roman", serif;
   --sombras: 0 1rem 2rem rgba(0, 0, 0, 0.18);
   --color-preto: #05070b;
+  --color-azul-escuro: #223149;
 }
 
 *{
@@ -52,8 +53,9 @@ button, address, select, textarea{
 
 
 .container{
-    width: 90%;
+    width: 100%;
     min-width: 110rem;
+    max-width: 80vw ;
     margin: 0 auto;
 }
 
