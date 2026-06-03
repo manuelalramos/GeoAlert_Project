@@ -11,6 +11,7 @@
   --sombras: 0 1rem 2rem rgba(0, 0, 0, 0.18);
   --color-preto: #05070b;
   --color-azul-escuro: #223149;
+  --color-azul: #496ca8;
 }
 
 *{
@@ -58,7 +59,7 @@ section{
 .container{
     width: 100%;
     min-width: 110rem;
-    max-width: 80vw ;
+    max-width: 70vw ;
     margin: 0 auto;
 }
 

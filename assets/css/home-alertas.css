@@ -1,0 +1,64 @@
+
+.home-alertas{
+    display: grid;
+    gap: 1.4rem;
+}
+
+.alerta-topo {
+        display: flex;
+    justify-content: space-between;
+    gap: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.alerta-card{
+    padding: 2.2rem;
+    border: 0.1rem solid rgba(15, 25, 57, 0.10);
+    border-left: 0.7rem solid var(--color-azul);
+    border-radius: 1.2rem;
+    color: var(--color-preto);
+    background: var(--color-branco);
+
+}
+
+.alerta-card.emergencia {
+  border-left-color: var(--color-laranja);
+}
+
+.alerta-card.alerta {
+  border-left-color: var(--color-amarelo);
+}
+
+.alerta-card h3{
+    font-size: 2rem;
+    color: var(--color-preto);
+}
+
+.alerta-card p{
+    color: #4f5668;
+}
+
+.nivel {
+  height: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: var(--color-preto);
+  background: var(--color-offwhite);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.home-alertas a {
+    padding: 1rem 1.5rem;
+    border: 0;
+    border-radius: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease;
+    max-width: 50vw;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
