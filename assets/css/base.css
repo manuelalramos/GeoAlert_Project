@@ -51,6 +51,9 @@ button, address, select, textarea{
     font: inherit;
 }
 
+section{
+    padding: 7rem 0;
+}
 
 .container{
     width: 100%;
@@ -59,9 +62,6 @@ button, address, select, textarea{
     margin: 0 auto;
 }
 
-.section{
-    padding: 7rem 0;
-}
 
 .section-p{
     display: inline-block;
