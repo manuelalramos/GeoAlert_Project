@@ -1,0 +1,49 @@
+:root{
+  --color-amarelo: #e3af64;
+  --color-laranja: #df8a5d;
+  --color-offwhite: #eee5ca;
+  --color-branco: #f8f7f5;
+  --text-color-segundaria: #a8afc0;
+  --linha: rgba(248, 247, 245, 0.18);
+  --card-color: rgba(248, 247, 245, 0.06);
+  --font-primaria: "Inter", Arial, Helvetica, sans-serif;
+  --font-segundaria: Georgia, "Times New Roman", serif;
+  --sombras: 0 1rem 2rem rgba(0, 0, 0, 0.18);
+  --color-preto: #05070b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    font-family: var(--font-primaria);
+    font-size: 1.6rem;
+    background-color: var(--color-preto);
+    color: var(--color-branco);
+    line-height: 1.5;
+}
+
+img{
+    display: block;
+    max-height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button, address, select, textarea{
+    font: inherit;
+}
+
+
