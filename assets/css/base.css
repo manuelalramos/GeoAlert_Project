@@ -56,6 +56,10 @@ section{
     padding: 7rem 0;
 }
 
+header{
+    z-index: 2;
+}
+
 .container{
     width: 100%;
     min-width: 110rem;
@@ -118,4 +122,32 @@ section{
     transition: 0.5s ease;
     scale: 1.01;
     border-color: rgba(227, 175, 100, 0.42);
+}
+
+.page-hero{
+    position: relative;
+    overflow: hidden;
+    padding: 6rem 0;
+    background: var(--color-preto);
+    border-bottom: 0.1rem solid var(--linha);
+}
+
+.page-hero h1{
+    max-width: 78rem;
+    margin-bottom: 1.4rem;
+    font-family: var(--color-branco);
+    font-size: clamp(3.8rem, 7vw, 7rem);
+    line-height: 1;
+}
+
+.page-hero p{
+    max-width: 72rem;
+    color: var(--text-color-segundaria);
+    font-size: 1.8rem;
+}
+
+.page-hero .page-subtitle{
+    font-weight: bolder;
+    color: var(--color-amarelo);
+    text-transform: uppercase ;
 }
