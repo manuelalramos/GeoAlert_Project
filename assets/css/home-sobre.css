@@ -1,0 +1,29 @@
+.sobre-home-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    align-items: center;
+}
+
+.sobre-home-grid .botao{
+    margin-top: 2rem;
+}
+
+.sobre-home-grid .section-text{
+    text-align: justify;
+    margin-right: 5rem;
+}
+
+.sobre-home-grid .section-title{
+    text-align: justify;
+    margin-right: 5rem;
+}
+
+.satelite-img{
+    padding: 2.4rem;
+    transition: transform 8s ease-in-out;   
+}
+
+.satelite-img:hover{
+    transform: rotate(360deg); 
+}
