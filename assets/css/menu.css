@@ -47,6 +47,7 @@
 
 .navbar-links a:hover{
     transition: 0.3s;
+    scale: 1.05;
     color: var(--color-branco);
     border-color: var(--linha);
     background: var(--color-azul-escuro);
