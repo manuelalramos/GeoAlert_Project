@@ -1,0 +1,36 @@
+.fluxo-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+.solucao-fluxo{
+    margin-top: 2.4rem;
+}
+
+.fluxo-card{
+    padding: 2.4rem;
+}
+
+.fluxo-card p{
+    color: var(--text-color-segundaria);
+}
+
+.fluxo-card span{
+    background: var(--color-amarelo);
+    display: grid;
+    place-items: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    margin-bottom: 1.4rem;
+    border-radius: 100px;
+    color: var(--color-preto);
+    font-weight: 700;
+}
+
+.solucao-grid{
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+}
