@@ -34,3 +34,37 @@
     gap: 4rem;
     align-items: center;
 }
+
+.mensagem-alerta{
+    padding: 2.4rem;
+    border-left: 0.6rem solid var(--color-laranja);
+}
+
+.mensagem-topo{
+    margin: 1rem 0;
+    color: var(--color-amarelo);
+    font-weight: bold;
+}
+
+.mensagem-alerta{
+    margin-bottom: 1rem;
+    color: var(--color-offwhite);
+}
+
+.mensagem-alerta .botao{
+    margin-top: 1.6rem;
+}
+
+.fluxo-grid:hover .fluxo-card{
+    opacity: 0.9;
+    transform: scale(0.96);
+    transition: 0.5s;
+}
+
+.fluxo-grid .fluxo-card:hover{
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1.06);
+    transition: 0.5s;
+}
