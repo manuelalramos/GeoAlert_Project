@@ -1,23 +1,20 @@
 .sobre-grid{
     display: grid;
     grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
 }
 
 .sobre-grid h3{
     color: var(--color-amarelo);
 }
 
-.sobre-grid p,
-.sobre-grid h2 {
-    grid-column-start: 1;
+.sobre-card {
+    align-self: center;
+    padding: 2.4rem;
 }
 
-
-.sobre-card {
-    grid-column: 2;
-    align-self: center;
-    transform: translateY(-10rem);
-    padding: 2.4rem;
+.sobre-grid p{
+    text-align: justify;
 }
 
 .info-card{
