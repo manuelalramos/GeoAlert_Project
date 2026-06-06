@@ -1,0 +1,70 @@
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.contato-formulario {
+    display: grid;
+    gap: 1.4rem;
+    padding: 2rem;
+}
+
+.contato-formulario label {
+    display: grid;
+    gap: 0.7rem;
+    color: var(--cream);
+    font-weight: 700;
+}
+
+.contato-formulario input,
+.contato-formulario textarea {
+    width: 100%;
+    min-height: 4.4rem;
+    padding: 1rem 1.2rem;
+    border: 0.1rem solid var(--line);
+    border-radius: 1.2rem;
+    color: var(--white);
+    background: rgba(248, 247, 245, 0.07);
+    outline: none;
+}
+
+.contato-formulario textarea {
+    min-height: 12rem;
+    resize: vertical;
+}
+
+.contato-formulario input:focus,
+.contato-formulario textarea:focus {
+    border-color: var(--caramel);
+    box-shadow: 0 0 0 0.3rem rgba(227, 175, 100, 0.14);
+}
+
+.contato-formulario input:invalid:not(:placeholder-shown),
+.contato-formulario textarea:invalid:not(:placeholder-shown) {
+    border-color: var(--orange);
+}
+
+.contato-formulario input:valid,
+.contato-formulario textarea:valid {
+    border-color: rgba(227, 175, 100, 0.7);
+}
+
+.info-card {
+    padding: 2.4rem;
+}
+
+.info-card p {
+    color: var(--muted);
+}
+
+.formulario-feedback {
+    min-height: 2.4rem;
+    padding-top: 0.4rem;
+    font-weight: 700;
+}
+
+.formulario-feedback.sucesso {
+    color: var(--caramel);
+}

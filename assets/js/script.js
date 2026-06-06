@@ -33,4 +33,20 @@ if (faq4) {
   });
 }
 
+// COntato
 
+const formularioContato = document.querySelector("#formularioContato");
+
+const formularioFeedback = document.querySelector("#formularioFeedback");
+
+
+if(formularioContato){
+    formularioContato.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    formularioFeedback.textContent = "Mensagem enviada com sucesso.";
+    formularioFeedback.className = "form-feedback sucesso";
+
+    formularioContato.reset();
+    });
+}
