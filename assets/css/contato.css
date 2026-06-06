@@ -1,70 +1,98 @@
 .contato-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 0.85fr;
+    gap: 3rem;
     align-items: start;
+    padding: 5rem 0;
+}
+
+.contato-formulario, .info-card {
+    padding: 2.4rem;
 }
 
 .contato-formulario {
     display: grid;
-    gap: 1.4rem;
-    padding: 2rem;
+    gap: 1.6rem;
+    border: 0.1rem solid var(--linha);
+    border-radius: 1.2rem;
+    background: var(--card-color);
+    box-shadow: var(--sombras);
 }
 
-.contato-formulario label {
+.form-group {
     display: grid;
-    gap: 0.7rem;
-    color: var(--cream);
+    gap: 0.6rem;
+}
+
+.form-group label {
+    color: var(--color-branco);
     font-weight: 700;
 }
 
-.contato-formulario input,
-.contato-formulario textarea {
+.form-group input, .form-group select, .form-group textarea {
     width: 100%;
-    min-height: 4.4rem;
-    padding: 1rem 1.2rem;
-    border: 0.1rem solid var(--line);
-    border-radius: 1.2rem;
-    color: var(--white);
+    min-height: 4.6rem;
+    padding: 1.1rem 1.2rem;
+    border: 0.1rem solid var(--linha);
+    border-radius: 0.8rem;
+    color: var(--color-branco);
     background: rgba(248, 247, 245, 0.07);
+    font-size: 1.6rem;
     outline: none;
 }
 
-.contato-formulario textarea {
+.form-group textarea {
     min-height: 12rem;
     resize: vertical;
 }
 
-.contato-formulario input:focus,
-.contato-formulario textarea:focus {
-    border-color: var(--caramel);
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--color-amarelo);
     box-shadow: 0 0 0 0.3rem rgba(227, 175, 100, 0.14);
 }
 
-.contato-formulario input:invalid:not(:placeholder-shown),
-.contato-formulario textarea:invalid:not(:placeholder-shown) {
-    border-color: var(--orange);
+.form-group.error input, .form-group.error select, .form-group.error textarea {
+    border-color: var(--color-laranja);
 }
 
-.contato-formulario input:valid,
-.contato-formulario textarea:valid {
-    border-color: rgba(227, 175, 100, 0.7);
-}
-
-.info-card {
-    padding: 2.4rem;
-}
-
-.info-card p {
-    color: var(--muted);
+.error-mensagem {
+    min-height: 1.8rem;
+    color: var(--color-laranja);
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 .formulario-feedback {
     min-height: 2.4rem;
-    padding-top: 0.4rem;
+    color: var(--color-amarelo);
     font-weight: 700;
 }
 
-.formulario-feedback.sucesso {
-    color: var(--caramel);
+.info-card {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.info-card h2 {
+    font-size: 3.2rem;
+    line-height: 1.1;
+}
+
+.info-card p {
+    color: var(--text-color-segundaria);
+}
+
+.info-card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--color-amarelo);
+    font-weight: 700;
+    transform-origin: left center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.info-card a:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
 }

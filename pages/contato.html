@@ -25,15 +25,17 @@
   <body>
     <header class="site-header">
       <nav class="navbar container">
-        <a class="logo" href="../index.html"><img src="../assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"/></a>
+        <a class="logo" href="../index.html">
+          <img src="../assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert" />
+        </a>
 
-        <button class="botao-menu" type="button">Menu</button>
+        <button class="botao-menu" type="button"><i class="fa-solid fa-bars-staggered"></i></button>
 
         <ul class="navbar-links">
           <li><a href="../index.html">Home</a></li>
           <li><a href="./integrantes.html">Integrantes</a></li>
           <li><a href="./sobre.html">Sobre</a></li>
-          <li><a href="./solucao.html">Solução</a></li>
+          <li><a href="./solucao.html">Solucao</a></li>
           <li><a href="./alertas.html">Alertas</a></li>
           <li><a href="./faq.html">FAQ</a></li>
           <li><a class="active" href="./contato.html">Contato</a></li>
@@ -42,58 +44,94 @@
     </header>
 
     <main>
-        <section class="page-hero">
-            <div class="container">
-                <p class="page-subtitle">Fale Conosco</p>
-                <h1 class="page-title">Contato</h1>
-                <p class="page-text">Formulário demonstrativo com validação feita pelo próprio HTML.</p>
+      <section class="page-hero">
+        <div class="container">
+          <p class="page-subtitle">Contato</p>
+          <h1 class="page-title">Fale com a equipe</h1>
+          <p class="page-text">
+            Estamos disponiveis para receber duvidas, sugestoes e comentarios
+            sobre o GeoAlert. Envie sua mensagem pelo formulario ou use os
+            canais abaixo.
+          </p>
+        </div>
+        
+        <div class="container contato-grid">
+          <form class="contato-formulario" aria-label="Formulario de contato" novalidate>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome completo"
+                minlength="3"
+                maxlength="150"
+              />
+              <small class="error-mensagem"></small>
             </div>
-        </section>
 
-        <section class="section container">
-            <div class="container contato-grid">
-                <form class="contato-formulario" id="formularioContato">
-                    <label id="nome">Nome
-                        <input type="text" id="nome" name="userName" placeholder="Digite seu nome">
-                    </label>
-                    <label id="email">E-mail
-                        <input type="text" id="email" name="userEmail" placeholder="Digite seu nome">
-                    </label>
-                    <label id="mensagem">Mensagem
-                        <textarea rows="5" type="text" id="mensagem" name="userMessage" placeholder="Escreva sua mensagem" required minlength="10" maxlength="500"></textarea>
-                    </label>
-                    
-                    <button class="botao" type="submit">Enviar Mensagem</button>
-                    
-                    <p class="formulario-feedback" id="formularioFeedback"></p>
-                </form>
-
-                <aside class="card info-card">
-                <h3>Canais simulados</h3>
-                <p>Webchat, SMS, mensagem de voz, Telegram e rádio comunitária.</p>
-                </aside>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email@email.com"
+                maxlength="150"
+              />
+              <small class="error-mensagem"></small>
             </div>
-        </section>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                rows="5"
+                id="mensagem"
+                name="mensagem"
+                placeholder="Escreva sua mensagem"
+                maxlength="500"
+              ></textarea>
+              <small class="error-mensagem"></small>
+            </div>
+
+            <button class="botao" type="submit">Enviar mensagem</button>
+            <p class="formulario-feedback"></p>
+          </form>
+
+          <aside class="card info-card">
+            <h2>Informacoes de contato</h2>
+            <p>
+              Tem duvidas sobre o projeto GeoAlert ou quer saber mais sobre a
+              solucao? Envie uma mensagem para a equipe.
+            </p>
+            <a href="mailto:contato@geoalert.com?subject=Contato%20pelo%20site">
+              <i class="fa-solid fa-envelope"></i>contato@geoalert.com
+            </a>
+            <p><i class="fa-solid fa-location-dot"></i>Sao Paulo/SP</p>
+          </aside>
+        </div>
+      </section>
     </main>
 
     <footer>
       <div class="container footer-conteudo">
         <div class="footer-marca">
-          <a class="footer-logo" href="../index.html"
-            ><img src="../assets/media/logo-geoalert.svg" alt="Logo GeoAlert"/></a>
+          <a class="footer-logo" href="../index.html">
+            <img src="../assets/media/logo-geoalert.svg" alt="Logo GeoAlert" />
+          </a>
           <p>
-            GeoAlert é um projeto acadêmico de alerta precoce para desastres
+            GeoAlert e um projeto academico de alerta precoce para desastres
             naturais.
           </p>
         </div>
 
         <nav class="footer-links">
           <ul>
-            <li class="footer-title">Páginas</li>
+            <li class="footer-title">Paginas</li>
             <li><a href="../index.html">Home</a></li>
             <li><a href="./integrantes.html">Integrantes</a></li>
             <li><a href="./sobre.html">Sobre</a></li>
-            <li><a href="./solucao.html">Solução</a></li>
+            <li><a href="./solucao.html">Solucao</a></li>
             <li><a href="./alertas.html">Alertas</a></li>
             <li><a href="./faq.html">FAQ</a></li>
             <li><a href="./contato.html">Contato</a></li>
@@ -103,22 +141,21 @@
         <address class="footer-contato">
           <p class="footer-title">Contato</p>
           <a href="mailto:contato@geoalert.com">contato@geoalert.com</a>
-          
-          <p>São Paulo - SP</p>
+          <p>Sao Paulo - SP</p>
         </address>
       </div>
-        <div class="footer-description">
-          
-          <p class="footer-acessibilidade">
-            <i class="fa-solid fa-ear-listen"></i>Site pensado para acessibilidade usando aria-label. Qualquer erro
-            <a href="./contato.html"><strong>entre em contato</strong></a>
-          </p>
-          
-          <small class="footer-bottom">
-            &copy; GeoAlert - Projeto acadêmico FIAP 2026.
-          </small>
-        </div>
-        
+
+      <div class="footer-description">
+        <p class="footer-acessibilidade">
+          <i class="fa-solid fa-ear-listen"></i>Site pensado para acessibilidade
+          usando aria-label. Qualquer erro
+          <a href="./contato.html"><strong>entre em contato</strong></a>
+        </p>
+
+        <small class="footer-bottom">
+          &copy; GeoAlert - Projeto academico FIAP 2026.
+        </small>
+      </div>
     </footer>
   </body>
 </html>
