@@ -58,18 +58,6 @@ function emailValido(email) {
 }
 
 if (formularioContato) {
-    const modalDialog = document.querySelector("#meuModal");
-    const botaoModal = document.querySelector("#btnFechar");
-    const divMsg = document.querySelector("#msg");
-    let modalInterval;
-
-    if (botaoModal && modalDialog) {
-        botaoModal.addEventListener("click", function () {
-            clearInterval(modalInterval);
-            modalDialog.close();
-        });
-    }
-
     formularioContato.addEventListener("submit", function (event) {
         event.preventDefault();
 
@@ -102,25 +90,6 @@ if (formularioContato) {
 
         if (formularioValido) {
             feedback.textContent = "Mensagem enviada com sucesso!";
-
-            if (modalDialog && divMsg) {
-                let contador = 5;
-
-                divMsg.innerHTML = `<span class="modal-icon">OK</span><p class="modal-title">Mensagem enviada!</p><p class="modal-text">Voce sera redirecionado em <span class="modal-count">${contador}</span> segundos.</p>`;
-                modalDialog.showModal();
-
-                clearInterval(modalInterval);
-                modalInterval = setInterval(function () {
-                    contador--;
-                    divMsg.innerHTML = `<span class="modal-icon">OK</span><p class="modal-title">Mensagem enviada!</p><p class="modal-text">Voce sera redirecionado em <span class="modal-count">${contador}</span> segundos.</p>`;
-
-                    if (contador === 0) {
-                        clearInterval(modalInterval);
-                        window.location.href = "../index.html";
-                    }
-                }, 1000);
-            }
-
             formularioContato.reset();
         }
     });

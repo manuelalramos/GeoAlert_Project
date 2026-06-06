@@ -22,11 +22,11 @@
 }
 
 .alerta-card.emergencia {
-  border-left-color: var(--color-laranja);
+  border-left-color: var(--color-emergencia);
 }
 
 .alerta-card.alerta {
-  border-left-color: var(--color-amarelo);
+  border-left-color: var(--color-alerta);
 }
 
 .alerta-card h3{
