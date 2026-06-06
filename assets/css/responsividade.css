@@ -1,0 +1,207 @@
+html,
+body{
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    width: min(90%, 120rem);
+    min-width: 0;
+    max-width: 120rem;
+}
+
+.section-text{
+    min-width: 0;
+    max-width: 68rem;
+}
+
+@media (max-width: 1300px){
+    .container{
+        width: 92%;
+    }
+}
+
+@media (max-width: 992px){
+    .navbar{
+        position: relative;
+    }
+
+    .botao-menu{
+        display: inline-flex;
+        flex: 0 0 auto;
+    }
+
+    .navbar-links{
+        position: absolute;
+        top: calc(100% + 1rem);
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.8rem;
+        padding: 1.2rem;
+        border: 0.1rem solid var(--linha);
+        border-radius: 1.2rem;
+        background: var(--color-preto);
+        box-shadow: var(--sombras);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-0.8rem);
+        transition: 0.3s ease;
+    }
+
+    .navbar-links.show{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .navbar-links a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero{
+        min-height: auto;
+        padding: 5rem 0 6rem;
+    }
+
+    .hero-title img{
+        max-width: 86rem;
+    }
+
+    .sobre-home-grid,
+    .sobre-grid,
+    .solucao-grid,
+    .contato-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .fluxo-grid,
+    .ods-grid,
+    .cards-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .integrantes-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-conteudo{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px){
+    section{
+        padding: 3rem 0;
+    }
+
+    .navbar{
+        min-height: 6.4rem;
+    }
+
+    .logo img{
+        margin: 0;
+    }
+
+    .page-hero{
+        padding: 4rem 0;
+    }
+
+    .page-hero h1,
+    .page-title{
+        font-size: clamp(3.2rem, 12vw, 5rem);
+    }
+
+    .section-title{
+        font-size: clamp(2.8rem, 9vw, 4rem);
+    }
+
+    .section-text,
+    .page-hero p,
+    .hero-text{
+        font-size: 1.6rem;
+    }
+
+    .hero-conteudo{
+        width: 92%;
+    }
+
+    .hero-title img{
+        max-width: 72rem;
+    }
+
+    .fluxo-grid,
+    .ods-grid,
+    .cards-grid,
+    .footer-conteudo{
+        grid-template-columns: 1fr;
+    }
+
+    .home-alertas a{
+        max-width: none;
+    }
+
+    .alerta-topo{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    footer{
+        width: 92%;
+        padding: 2.4rem 2rem;
+    }
+}
+
+@media (max-width: 480px){
+    body{
+        font-size: 1.5rem;
+    }
+
+    .container{
+        width: 92%;
+    }
+
+    .botao,
+    .home-alertas a,
+    .pagina-alertas .abrir-modal{
+        width: 100%;
+    }
+
+    .botao-menu{
+        width: 4.2rem;
+        height: 4.2rem;
+        border-radius: 1rem;
+    }
+
+    .hero{
+        padding: 4rem 0 5rem;
+    }
+
+    .hero-title img{
+        max-width: 52rem;
+    }
+
+    .contato-formulario,
+    .info-card,
+    .faq-item,
+    .fluxo-card,
+    .integrante-card,
+    .sobre-card{
+        padding: 2rem;
+    }
+
+    .pagina-alertas .filtros label{
+        min-width: 0;
+        width: 100%;
+    }
+}

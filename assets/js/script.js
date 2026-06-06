@@ -1,3 +1,24 @@
+// Menu mobile
+
+const menuButton = document.querySelector(".botao-menu");
+const navbarLinks = document.querySelector(".navbar-links");
+
+if (menuButton && navbarLinks) {
+    menuButton.setAttribute("aria-expanded", "false");
+
+    menuButton.addEventListener("click", function () {
+        navbarLinks.classList.toggle("show");
+        menuButton.setAttribute("aria-expanded", navbarLinks.classList.contains("show"));
+    });
+
+    navbarLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", function () {
+            navbarLinks.classList.remove("show");
+            menuButton.setAttribute("aria-expanded", "false");
+        });
+    });
+}
+
 // FAQ
 
 const faqQuestions = document.querySelectorAll(".faq-pergunta");

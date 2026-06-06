@@ -58,3 +58,23 @@
     border-color: var(--linha);
     background: var(--color-amarelo);
 }
+
+.botao-menu{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 4.6rem;
+    height: 4.6rem;
+    border: 0.1rem solid var(--linha);
+    border-radius: 1.2rem;
+    color: var(--color-preto);
+    background: var(--color-amarelo);
+    font-size: 1.9rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.botao-menu:hover{
+    background: var(--color-offwhite);
+    scale: 1.04;
+}
