@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeAlert - Sobre</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script src="../assets/js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/c79d6fb851.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/svg" href="../assets/media/logo-geoalert.svg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="logo" href="../index.html"><img src="../assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"/></a>
+
+        <button class="botao-menu" type="button">Menu</button>
+
+        <ul class="navbar-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./integrantes.html">Integrantes</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a class="active" href="./solucao.html">Solução</a></li>
+          <li><a href="./alertas.html">Alertas</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="page-subtitle">Painel simulado</p>
+                <h1 class="page-title">Alertas Ativos</h1>
+                <p>Avisos fictícios organizados por tipo de desastre e nível de urgência. A ideia é mostrar como a Defesa Civil poderia visualizar prioridades.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="flitros">
+                    <label for="">Tipo de desastre
+                        <select name="" id="">
+                            <option value="todos">Todos</option>
+                            <option value="enchente">Enchente</option>
+                            <option value="deslizamento">Deslizamento</option>
+                            <option value="queimada">Queimada</option>
+                        </select>
+                    </label>
+                    <label for="">Nível do alerta
+                        <select>
+                            <option value="todos">Todos</option>
+                            <option value="baixo">Baixo</option>
+                            <option value="atencao">Atenção</option>
+                            <option value="emergencia">Emergência</option>
+                        </select>
+                    </label>
+
+                    <p class="contador-alertas">Visíveis: <strong id="contadorAlertas">0</strong></p>
+                </div>
+
+                <div class="alerta-lista" id="listaAlertas">
+                    <article class="alerta-card emergencia">
+                        <div class="alerta-topo">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <span class="nivel">Emergência</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo corrupti praesentium sed.</p>
+                        <a class="abrir-modal" href="#modal-enchente">Ver Detalhes</a>
+                    </article>
+                </div>
+
+                <!-- modal -->
+                <div class="modal" id="modal-enchente">
+                    <div class="modal-content">
+                        <a class="fechar-modal" href="#listaAlertas " aria-label="Fechar">X</a>
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <div class="modal-dados">
+                            <p><strong>Nível:</strong> Emergências</p>
+                            <p><strong>Tipo:</strong> Enchente</p>
+                            <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
+                            <p><strong>Orientação:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container cards-grid">
+                <article class="card info-card">
+                  <h3>Lorem, ipsum.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dolores.</p>
+                </article>
+
+                <article class="card info-card">
+                  <h3>Lorem</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, magnam!</p>
+                </article>
+
+                <article class="card info-card">
+                  <h3>Lorem</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, eveniet praesentium?</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="container footer-conteudo">
+        <div class="footer-marca">
+          <a class="footer-logo" href="../index.html"
+            ><img src="../assets/media/logo-geoalert.svg" alt="Logo GeoAlert"/></a>
+          <p>
+            GeoAlert é um projeto acadêmico de alerta precoce para desastres
+            naturais.
+          </p>
+        </div>
+
+        <nav class="footer-links">
+          <ul>
+            <li class="footer-title">Páginas</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./integrantes.html">Integrantes</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./solucao.html">Solução</a></li>
+            <li><a href="./alertas.html">Alertas</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+          </ul>
+        </nav>
+
+        <address class="footer-contato">
+          <p class="footer-title">Contato</p>
+          <a href="mailto:contato@geoalert.com">contato@geoalert.com</a>
+          
+          <p>São Paulo - SP</p>
+        </address>
+      </div>
+        <div class="footer-description">
+          
+          <p class="footer-acessibilidade">
+            <i class="fa-solid fa-ear-listen"></i>Site pensado para acessibilidade usando aria-label. Qualquer erro
+            <a href="./contato.html"><strong>entre em contato</strong></a>
+          </p>
+          
+          <small class="footer-bottom">
+            &copy; GeoAlert - Projeto acadêmico FIAP 2026.
+          </small>
+        </div>
+        
+    </footer>
+  </body>
+</html>
