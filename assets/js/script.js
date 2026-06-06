@@ -8,13 +8,17 @@ if (menuButton && navbarLinks) {
 
     menuButton.addEventListener("click", function () {
         navbarLinks.classList.toggle("show");
-        menuButton.setAttribute("aria-expanded", navbarLinks.classList.contains("show"));
+        const menuAberto = navbarLinks.classList.contains("show");
+
+        menuButton.setAttribute("aria-expanded", menuAberto);
+        menuButton.setAttribute("aria-label", menuAberto ? "Fechar menu" : "Abrir menu");
     });
 
     navbarLinks.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", function () {
             navbarLinks.classList.remove("show");
             menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Abrir menu");
         });
     });
 }

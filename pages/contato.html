@@ -23,15 +23,16 @@
     <link rel="icon" type="image/svg" href="../assets/media/logo-geoalert.svg" />
   </head>
   <body>
+    <!-- Cabecalho -->
     <header class="site-header">
-      <nav class="navbar container">
-        <a class="logo" href="../index.html">
+      <nav class="navbar container" aria-label="Menu principal">
+        <a class="logo" href="../index.html" aria-label="Voltar para a pagina inicial">
           <img src="../assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert" />
         </a>
 
-        <button class="botao-menu" type="button"><i class="fa-solid fa-bars-staggered"></i></button>
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-controls="menu-principal"><i class="fa-solid fa-bars-staggered" aria-hidden="true"></i></button>
 
-        <ul class="navbar-links">
+        <ul class="navbar-links" id="menu-principal">
           <li><a href="../index.html">Home</a></li>
           <li><a href="./integrantes.html">Integrantes</a></li>
           <li><a href="./sobre.html">Sobre</a></li>
@@ -43,7 +44,9 @@
       </nav>
     </header>
 
+    <!-- Conteudo principal -->
     <main>
+      <!-- Contato -->
       <section class="page-hero">
         <div class="container">
           <p class="page-subtitle">Contato</p>
@@ -95,7 +98,7 @@
             </div>
 
             <button class="botao" type="submit">Enviar mensagem</button>
-            <p class="formulario-feedback"></p>
+            <p class="formulario-feedback" aria-live="polite"></p>
           </form>
 
           <aside class="card info-card">
@@ -104,19 +107,20 @@
               Tem duvidas sobre o projeto GeoAlert ou quer saber mais sobre a
               solucao? Envie uma mensagem para a equipe.
             </p>
-            <a href="mailto:contato@geoalert.com?subject=Contato%20pelo%20site">
-              <i class="fa-solid fa-envelope"></i>contato@geoalert.com
+            <a href="mailto:contato@geoalert.com?subject=Contato%20pelo%20site" aria-label="Enviar e-mail para contato do GeoAlert">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>contato@geoalert.com
             </a>
-            <p><i class="fa-solid fa-location-dot"></i>Sao Paulo/SP</p>
+            <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Sao Paulo/SP</p>
           </aside>
         </div>
       </section>
     </main>
 
+    <!-- Rodape -->
     <footer>
       <div class="container footer-conteudo">
         <div class="footer-marca">
-          <a class="footer-logo" href="../index.html">
+          <a class="footer-logo" href="../index.html" aria-label="Voltar para a pagina inicial">
             <img src="../assets/media/logo-geoalert.svg" alt="Logo GeoAlert" />
           </a>
           <p>
@@ -125,7 +129,7 @@
           </p>
         </div>
 
-        <nav class="footer-links">
+        <nav class="footer-links" aria-label="Links do rodape">
           <ul>
             <li class="footer-title">Paginas</li>
             <li><a href="../index.html">Home</a></li>
@@ -147,7 +151,7 @@
 
       <div class="footer-description">
         <p class="footer-acessibilidade">
-          <i class="fa-solid fa-ear-listen"></i>Site pensado para acessibilidade
+          <i class="fa-solid fa-ear-listen" aria-hidden="true"></i>Site pensado para acessibilidade
           usando aria-label. Qualquer erro
           <a href="./contato.html"><strong>entre em contato</strong></a>
         </p>

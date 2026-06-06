@@ -23,13 +23,14 @@
     <link rel="icon" type="image/svg" href="./assets/media/logo-geoalert.svg" />
   </head>
   <body>
+    <!-- Cabecalho -->
     <header class="site-header">
-      <nav class="navbar container">
-        <a class="logo" href="./index.html"><img src="./assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"/></a>
+      <nav class="navbar container" aria-label="Menu principal">
+        <a class="logo" href="./index.html" aria-label="Voltar para a pagina inicial"><img src="./assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"/></a>
 
-        <button class="botao-menu" type="button"><i class="fa-solid fa-bars-staggered"></i></button>
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-controls="menu-principal"><i class="fa-solid fa-bars-staggered" aria-hidden="true"></i></button>
 
-        <ul class="navbar-links">
+        <ul class="navbar-links" id="menu-principal">
           <li><a class="active" href="./index.html">Home</a></li>
           <li><a href="./pages/integrantes.html">Integrantes</a></li>
           <li><a href="./pages/sobre.html">Sobre</a></li>
@@ -41,7 +42,9 @@
       </nav>
     </header>
 
+    <!-- Conteudo principal -->
     <main>
+      <!-- Hero -->
       <section class="hero">
         <div class="hero-conteudo">
           <p class="hero-subtitle">Global Solution 2026</p>
@@ -60,6 +63,7 @@
         </div>
       </section>
 
+      <!-- Sobre -->
       <section id="sobre-home">
         <div class="container sobre-home-grid">
           <div>
@@ -80,6 +84,7 @@
         </div>
       </section>
 
+      <!-- Alertas recentes -->
       <section>
         <div class="container">
           <p class="section-p">Alertas</p>
@@ -108,12 +113,13 @@
               </p>
             </article>
             <a class="botao" href="./pages/alertas.html"
-            >Ver todos os alertas<i class="fa-solid fa-arrow-right"></i
+            >Ver todos os alertas<i class="fa-solid fa-arrow-right" aria-hidden="true"></i
               ></a>
             </div>
         </div>
       </section>
 
+      <!-- ODS -->
       <section class="home-ods">
         <div class="container">
           <p class="section-p">ODS</p>
@@ -145,10 +151,11 @@
       </section>
     </main>
 
+    <!-- Rodape -->
     <footer>
       <div class="container footer-conteudo">
         <div class="footer-marca">
-          <a class="footer-logo" href="./index.html"
+          <a class="footer-logo" href="./index.html" aria-label="Voltar para a pagina inicial"
             ><img src="./assets/media/logo-geoalert.svg" alt="Logo GeoAlert"
           /></a>
           <p>
@@ -157,7 +164,7 @@
           </p>
         </div>
 
-        <nav class="footer-links">
+        <nav class="footer-links" aria-label="Links do rodape">
           <ul>
             <li class="footer-title">Páginas</li>
             <li><a href="./index.html">Home</a></li>
@@ -180,7 +187,7 @@
         <div class="footer-description">
           
           <p class="footer-acessibilidade">
-            <i class="fa-solid fa-ear-listen"></i>Site pensado para acessibilidade usando aria-label. Qualquer erro
+            <i class="fa-solid fa-ear-listen" aria-hidden="true"></i>Site pensado para acessibilidade usando aria-label. Qualquer erro
             <a href="./pages/contato.html"><strong>entre em contato</strong></a>
           </p>
           

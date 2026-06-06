@@ -23,13 +23,14 @@
     <link rel="icon" type="image/svg" href="../assets/media/logo-geoalert.svg" />
   </head>
   <body class="pagina-alertas">
+    <!-- Cabeçalho -->
     <header class="site-header">
-      <nav class="navbar container">
-        <a class="logo" href="../index.html"><img src="../assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"/></a>
+      <nav class="navbar container" aria-label="Menu principal">
+        <a class="logo" href="../index.html" aria-label="Voltar para a pagina inicial"><img src="../assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"/></a>
 
-        <button class="botao-menu" type="button"><i class="fa-solid fa-bars-staggered"></i></button>
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-controls="menu-principal"><i class="fa-solid fa-bars-staggered" aria-hidden="true"></i></button>
 
-        <ul class="navbar-links">
+        <ul class="navbar-links" id="menu-principal">
           <li><a href="../index.html">Home</a></li>
           <li><a href="./integrantes.html">Integrantes</a></li>
           <li><a href="./sobre.html">Sobre</a></li>
@@ -41,7 +42,9 @@
       </nav>
     </header>
 
+    <!-- Conteúdo principal -->
     <main>
+        <!-- Topo da pagina -->
         <section class="page-hero">
             <div class="container">
                 <p class="page-subtitle">Painel simulado</p>
@@ -50,19 +53,20 @@
             </div>
         </section>
 
+        <!-- Lista de alertas -->
         <section>
             <div class="container">
                 <div class="filtros">
-                    <label for="">Tipo de desastre
-                        <select name="" id="">
+                    <label for="tipoDesastre">Tipo de desastre
+                        <select name="tipoDesastre" id="tipoDesastre">
                             <option value="todos">Todos</option>
                             <option value="enchente">Enchente</option>
                             <option value="deslizamento">Deslizamento</option>
                             <option value="queimada">Queimada</option>
                         </select>
                     </label>
-                    <label for="">Nível do alerta
-                        <select>
+                    <label for="nivelAlerta">Nível do alerta
+                        <select name="nivelAlerta" id="nivelAlerta">
                             <option value="todos">Todos</option>
                             <option value="baixo">Baixo</option>
                             <option value="atencao">Atenção</option>
@@ -80,7 +84,7 @@
                             <span class="nivel">Emergência</span>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo corrupti praesentium sed.</p>
-                        <a class="abrir-modal" href="#modal-enchente">Ver Detalhes</a>
+                        <a class="abrir-modal" href="#modal-enchente" aria-label="Ver detalhes do alerta de enchente">Ver Detalhes</a>
                     </article>
 
                     <article class="alerta-card alerta">
@@ -89,7 +93,7 @@
                             <span class="nivel">Alerta</span>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo corrupti praesentium sed.</p>
-                        <a class="abrir-modal" href="#modal-deslizamento">Ver Detalhes</a>
+                        <a class="abrir-modal" href="#modal-deslizamento" aria-label="Ver detalhes do alerta de deslizamento">Ver Detalhes</a>
                     </article>
 
                     <article class="alerta-card atencao">
@@ -98,7 +102,7 @@
                             <span class="nivel">Atencao</span>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo corrupti praesentium sed.</p>
-                        <a class="abrir-modal" href="#modal-queimada">Ver Detalhes</a>
+                        <a class="abrir-modal" href="#modal-queimada" aria-label="Ver detalhes do alerta de queimada">Ver Detalhes</a>
                     </article>
 
                     <article class="alerta-card baixo">
@@ -107,14 +111,14 @@
                             <span class="nivel">Baixo</span>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo corrupti praesentium sed.</p>
-                        <a class="abrir-modal" href="#modal-chuva">Ver Detalhes</a>
+                        <a class="abrir-modal" href="#modal-chuva" aria-label="Ver detalhes do alerta de chuva">Ver Detalhes</a>
                     </article>
                 </div>
 
-                <!-- modal -->
+                <!-- Modais dos alertas -->
                 <div class="modal" id="modal-enchente">
                     <div class="modal-content">
-                        <a class="fechar-modal" href="#listaAlertas " aria-label="Fechar">X</a>
+                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de enchente">X</a>
                         <h2>Lorem ipsum dolor sit.</h2>
                         <div class="modal-dados">
                             <div class="modal-dados-titulo">
@@ -129,7 +133,7 @@
 
                 <div class="modal" id="modal-deslizamento">
                     <div class="modal-content">
-                        <a class="fechar-modal" href="#listaAlertas " aria-label="Fechar">X</a>
+                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de deslizamento">X</a>
                         <h2>Lorem ipsum dolor sit.</h2>
                         <div class="modal-dados">
                             <div class="modal-dados-titulo">
@@ -144,7 +148,7 @@
 
                 <div class="modal" id="modal-queimada">
                     <div class="modal-content">
-                        <a class="fechar-modal" href="#listaAlertas " aria-label="Fechar">X</a>
+                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de queimada">X</a>
                         <h2>Lorem ipsum dolor sit.</h2>
                         <div class="modal-dados">
                             <div class="modal-dados-titulo">
@@ -159,7 +163,7 @@
 
                 <div class="modal" id="modal-chuva">
                     <div class="modal-content">
-                        <a class="fechar-modal" href="#listaAlertas " aria-label="Fechar">X</a>
+                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de chuva">X</a>
                         <h2>Lorem ipsum dolor sit.</h2>
                         <div class="modal-dados">
                             <div class="modal-dados-titulo">
@@ -177,10 +181,11 @@
         </section>
     </main>
 
+    <!-- Rodape -->
     <footer>
       <div class="container footer-conteudo">
         <div class="footer-marca">
-          <a class="footer-logo" href="../index.html"
+          <a class="footer-logo" href="../index.html" aria-label="Voltar para a pagina inicial"
             ><img src="../assets/media/logo-geoalert.svg" alt="Logo GeoAlert"/></a>
           <p>
             GeoAlert é um projeto acadêmico de alerta precoce para desastres
@@ -188,7 +193,7 @@
           </p>
         </div>
 
-        <nav class="footer-links">
+        <nav class="footer-links" aria-label="Links do rodape">
           <ul>
             <li class="footer-title">Páginas</li>
             <li><a href="../index.html">Home</a></li>
@@ -211,7 +216,7 @@
         <div class="footer-description">
           
           <p class="footer-acessibilidade">
-            <i class="fa-solid fa-ear-listen"></i>Site pensado para acessibilidade usando aria-label. Qualquer erro
+            <i class="fa-solid fa-ear-listen" aria-hidden="true"></i>Site pensado para acessibilidade usando aria-label. Qualquer erro
             <a href="./contato.html"><strong>entre em contato</strong></a>
           </p>
           

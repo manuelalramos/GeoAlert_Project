@@ -23,13 +23,14 @@
     <link rel="icon" type="image/svg" href="../assets/media/logo-geoalert.svg" />
   </head>
   <body>
+    <!-- Cabecalho -->
     <header class="site-header">
-      <nav class="navbar container">
-        <a class="logo" href="../index.html"><img src="../assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"/></a>
+      <nav class="navbar container" aria-label="Menu principal">
+        <a class="logo" href="../index.html" aria-label="Voltar para a pagina inicial"><img src="../assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"/></a>
 
-        <button class="botao-menu" type="button"><i class="fa-solid fa-bars-staggered"></i></button>
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-controls="menu-principal"><i class="fa-solid fa-bars-staggered" aria-hidden="true"></i></button>
 
-        <ul class="navbar-links">
+        <ul class="navbar-links" id="menu-principal">
           <li><a href="../index.html">Home</a></li>
           <li><a href="./integrantes.html">Integrantes</a></li>
           <li><a href="./sobre.html">Sobre</a></li>
@@ -41,7 +42,9 @@
       </nav>
     </header>
 
+    <!-- Conteudo principal -->
     <main>
+        <!-- Topo da pagina -->
         <section class="page-hero">
             <div class="container">
                 <p class="page-subtitle">Dúvidas</p>
@@ -50,37 +53,37 @@
             </div>
         </section>
 
-        <section>
-            <section class="section container">
+        <!-- Perguntas frequentes -->
+        <section class="section container">
             <div class="container faq-list">
                 <article class="faq-item">
-                    <button class="faq-pergunta" type="button" aria-expanded="false"><span>Lorem ipsum dolor sit amet?</span><i class="fa-solid fa-caret-down faq-icon"></i></button>
+                    <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-resposta-1"><span>Lorem ipsum dolor sit amet?</span><i class="fa-solid fa-caret-down faq-icon" aria-hidden="true"></i></button>
 
-                    <div class="faq-resposta">
+                    <div class="faq-resposta" id="faq-resposta-1">
                         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi obcaecati mollitia delectus voluptatibus repellendus aliquam dolor fuga animi, eligendi expedita.</p>
                     </div>
                 </article>
 
                 <article class="faq-item">
-                    <button class="faq-pergunta" type="button" aria-expanded="false"><span>Lorem ipsum dolor sit amet?</span><i class="fa-solid fa-caret-down faq-icon"></i></button>
+                    <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-resposta-2"><span>Lorem ipsum dolor sit amet?</span><i class="fa-solid fa-caret-down faq-icon" aria-hidden="true"></i></button>
 
-                    <div class="faq-resposta">
+                    <div class="faq-resposta" id="faq-resposta-2">
                         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi obcaecati mollitia delectus voluptatibus repellendus aliquam dolor fuga animi, eligendi expedita.</p>
                     </div>
                 </article>
 
                 <article class="faq-item">
-                    <button class="faq-pergunta" type="button" aria-expanded="false"><span>Lorem ipsum dolor sit amet?</span><i class="fa-solid fa-caret-down faq-icon"></i></button>
+                    <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-resposta-3"><span>Lorem ipsum dolor sit amet?</span><i class="fa-solid fa-caret-down faq-icon" aria-hidden="true"></i></button>
 
-                    <div class="faq-resposta">
+                    <div class="faq-resposta" id="faq-resposta-3">
                         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi obcaecati mollitia delectus voluptatibus repellendus aliquam dolor fuga animi, eligendi expedita.</p>
                     </div>
                 </article>
 
                 <article class="faq-item">
-                    <button class="faq-pergunta" type="button" aria-expanded="false"><span>Lorem ipsum dolor sit amet?</span><i class="fa-solid fa-caret-down faq-icon"></i></button>
+                    <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-resposta-4"><span>Lorem ipsum dolor sit amet?</span><i class="fa-solid fa-caret-down faq-icon" aria-hidden="true"></i></button>
 
-                    <div class="faq-resposta">
+                    <div class="faq-resposta" id="faq-resposta-4">
                         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi obcaecati mollitia delectus voluptatibus repellendus aliquam dolor fuga animi, eligendi expedita.</p>
                     </div>
                 </article>
@@ -89,10 +92,11 @@
         </section>
     </main>
 
+    <!-- Rodape -->
     <footer>
       <div class="container footer-conteudo">
         <div class="footer-marca">
-          <a class="footer-logo" href="../index.html"
+          <a class="footer-logo" href="../index.html" aria-label="Voltar para a pagina inicial"
             ><img src="../assets/media/logo-geoalert.svg" alt="Logo GeoAlert"/></a>
           <p>
             GeoAlert é um projeto acadêmico de alerta precoce para desastres
@@ -100,7 +104,7 @@
           </p>
         </div>
 
-        <nav class="footer-links">
+        <nav class="footer-links" aria-label="Links do rodape">
           <ul>
             <li class="footer-title">Páginas</li>
             <li><a href="../index.html">Home</a></li>
@@ -123,7 +127,7 @@
         <div class="footer-description">
           
           <p class="footer-acessibilidade">
-            <i class="fa-solid fa-ear-listen"></i>Site pensado para acessibilidade usando aria-label. Qualquer erro
+            <i class="fa-solid fa-ear-listen" aria-hidden="true"></i>Site pensado para acessibilidade usando aria-label. Qualquer erro
             <a href="./contato.html"><strong>entre em contato</strong></a>
           </p>
           

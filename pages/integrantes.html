@@ -23,13 +23,14 @@
     <link rel="icon" type="image/svg" href="../assets/media/logo-geoalert.svg" />
   </head>
   <body>
+    <!-- Cabecalho -->
     <header class="site-header">
-      <nav class="navbar container">
-        <a class="logo" href="../index.html"><img src="../assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"/></a>
+      <nav class="navbar container" aria-label="Menu principal">
+        <a class="logo" href="../index.html" aria-label="Voltar para a pagina inicial"><img src="../assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"/></a>
 
-        <button class="botao-menu" type="button"><i class="fa-solid fa-bars-staggered"></i></button>
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-controls="menu-principal"><i class="fa-solid fa-bars-staggered" aria-hidden="true"></i></button>
 
-        <ul class="navbar-links">
+        <ul class="navbar-links" id="menu-principal">
           <li><a href="../index.html">Home</a></li>
           <li><a class="active" href="./integrantes.html">Integrantes</a></li>
           <li><a href="./sobre.html">Sobre</a></li>
@@ -41,7 +42,9 @@
       </nav>
     </header>
 
+    <!-- Conteudo principal -->
     <main>
+        <!-- Topo da pagina -->
         <section class="page-hero">
             <div class="container">
                 <p class="page-subtitle">Equipe</p>
@@ -50,6 +53,7 @@
             </div>
         </section>
 
+        <!-- Lista de integrantes -->
         <section>
             <div class="container integrantes-grid">
                 <article class="integrante-card">
@@ -57,43 +61,47 @@
                     <h2>Lena Haidar Halawi</h2>
                     <p><strong>RM </strong>572258 - <strong>Turma: </strong>1TDSPG</p>
                     <div class="integrante-links">
-                        <a href="https://github.com/Lenahalawi07" target="_blank" aria-label="GitHub da Lena"><i
-                                class="fa-brands fa-github fa-xl"></i></a>
+                        <a href="https://github.com/Lenahalawi07" target="_blank" rel="noopener noreferrer" aria-label="GitHub da Lena"><i
+                                class="fa-brands fa-github fa-xl" aria-hidden="true"></i></a>
                         <a href="https://www.linkedin.com/in/lena-haidar-halawi-09134a3b8" target="_blank"
-                            aria-label="LinkedIn da Lena"><i class="fa-brands fa-square-linkedin fa-xl"></i></a>
+                            rel="noopener noreferrer" aria-label="LinkedIn da Lena"><i class="fa-brands fa-square-linkedin fa-xl" aria-hidden="true"></i></a>
+                    </div>
                 </article>
 
                  <article class="integrante-card">
-                    <div class="foto-integrante"><img src="../assets/media/foto_lyvia.jpeg" alt="Foto Lena"></div>
+                    <div class="foto-integrante"><img src="../assets/media/foto_lyvia.jpeg" alt="Foto Lyvia"></div>
                     <h2>Lyvia Correa Amorim</h2>
                     <p><strong>RM </strong>569851 - <strong>Turma: </strong>1TDSPG</p>
                     <div class="integrante-links">
-                        <a href="https://github.com/lyviaamorim569851" target="_blank" aria-label="GitHub da Lena"><i
-                                class="fa-brands fa-github fa-xl"></i></a>
+                        <a href="https://github.com/lyviaamorim569851" target="_blank" rel="noopener noreferrer" aria-label="GitHub da Lyvia"><i
+                                class="fa-brands fa-github fa-xl" aria-hidden="true"></i></a>
                         <a href="https://www.linkedin.com/in/lyvia-correa-de-amorim-0203493b8" target="_blank"
-                            aria-label="LinkedIn da Lena"><i class="fa-brands fa-square-linkedin fa-xl"></i></a>
+                            rel="noopener noreferrer" aria-label="LinkedIn da Lyvia"><i class="fa-brands fa-square-linkedin fa-xl" aria-hidden="true"></i></a>
+                    </div>
                 </article>
 
                 <article class="integrante-card">
-                    <div class="foto-integrante"><img src="../assets/media/foto_manuela.jpg" alt="Foto Lena"></div>
+                    <div class="foto-integrante"><img src="../assets/media/foto_manuela.jpg" alt="Foto Manuela"></div>
                     <h2>Manuela de Lima Ramos</h2>
-                    <p><strong>RM </strong>572956 - <strong>Turma: </strong>1TDSPG</p></p>
+                    <p><strong>RM </strong>572956 - <strong>Turma: </strong>1TDSPG</p>
                     <div class="integrante-links">
-                        <a href="https://github.com/manuelalramos" target="_blank" aria-label="GitHub da Lena"><i
-                                class="fa-brands fa-github fa-xl"></i></a>
+                        <a href="https://github.com/manuelalramos" target="_blank" rel="noopener noreferrer" aria-label="GitHub da Manuela"><i
+                                class="fa-brands fa-github fa-xl" aria-hidden="true"></i></a>
                         <a href="https://www.linkedin.com/in/manuelalramos" target="_blank"
-                            aria-label="LinkedIn da Lena"><i class="fa-brands fa-square-linkedin fa-xl"></i></a>
+                            rel="noopener noreferrer" aria-label="LinkedIn da Manuela"><i class="fa-brands fa-square-linkedin fa-xl" aria-hidden="true"></i></a>
+                    </div>
                 </article>
 
                 <article class="integrante-card">
-                    <div class="foto-integrante"><img src="../assets/media/foto_yasmin.jpeg" alt="Foto Lena"></div>
+                    <div class="foto-integrante"><img src="../assets/media/foto_yasmin.jpeg" alt="Foto Yasmin"></div>
                     <h2>Yasmin Souza Silva Martins</h2>
                     <p><strong>RM </strong>572102 - <strong>Turma: </strong>1TDSPG</p>
                     <div class="integrante-links">
-                        <a href="https://github.com/yasminmartins18" target="_blank" aria-label="GitHub da Lena"><i
-                                class="fa-brands fa-github fa-xl"></i></a>
+                        <a href="https://github.com/yasminmartins18" target="_blank" rel="noopener noreferrer" aria-label="GitHub da Yasmin"><i
+                                class="fa-brands fa-github fa-xl" aria-hidden="true"></i></a>
                         <a href="https://www.linkedin.com/in/yasmin-souza-silva-martins-32085b376" target="_blank"
-                            aria-label="LinkedIn da Lena"><i class="fa-brands fa-square-linkedin fa-xl"></i></a>
+                            rel="noopener noreferrer" aria-label="LinkedIn da Yasmin"><i class="fa-brands fa-square-linkedin fa-xl" aria-hidden="true"></i></a>
+                    </div>
                 </article>
 
             </div>
@@ -102,10 +110,11 @@
 
     </main>
 
+    <!-- Rodape -->
     <footer>
       <div class="container footer-conteudo">
         <div class="footer-marca">
-          <a class="footer-logo" href="../index.html"
+          <a class="footer-logo" href="../index.html" aria-label="Voltar para a pagina inicial"
             ><img src="../assets/media/logo-geoalert.svg" alt="Logo GeoAlert"
           /></a>
           <p>
@@ -114,7 +123,7 @@
           </p>
         </div>
 
-        <nav class="footer-links">
+        <nav class="footer-links" aria-label="Links do rodape">
           <ul>
             <li class="footer-title">Páginas</li>
             <li><a href="../index.html">Home</a></li>
@@ -137,7 +146,7 @@
         <div class="footer-description">
           
           <p class="footer-acessibilidade">
-            <i class="fa-solid fa-ear-listen"></i>Site pensado para acessibilidade usando aria-label. Qualquer erro
+            <i class="fa-solid fa-ear-listen" aria-hidden="true"></i>Site pensado para acessibilidade usando aria-label. Qualquer erro
             <a href="./contato.html"><strong>entre em contato</strong></a>
           </p>
           
