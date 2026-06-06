@@ -12,6 +12,10 @@
   --color-preto: #05070b;
   --color-azul-escuro: #223149;
   --color-azul: #496ca8;
+  --color-emergencia: rgb(174, 56, 56);
+  --color-alerta: rgb(176, 98, 25);
+  --color-atencao: rgb(160, 153, 17);
+  --color-baixo: rgb(68, 158, 58);
 }
 
 *{

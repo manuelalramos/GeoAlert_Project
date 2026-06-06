@@ -22,7 +22,7 @@
 
     <link rel="icon" type="image/svg" href="../assets/media/logo-geoalert.svg" />
   </head>
-  <body>
+  <body class="pagina-alertas">
     <header class="site-header">
       <nav class="navbar container">
         <a class="logo" href="../index.html"><img src="../assets/media/logo-geoalert-menu.svg" alt="Logo GeoAlert"/></a>
@@ -33,8 +33,8 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="./integrantes.html">Integrantes</a></li>
           <li><a href="./sobre.html">Sobre</a></li>
-          <li><a class="active" href="./solucao.html">Solução</a></li>
-          <li><a href="./alertas.html">Alertas</a></li>
+          <li><a href="./solucao.html">Solução</a></li>
+          <li><a class="active" href="./alertas.html">Alertas</a></li>
           <li><a href="./faq.html">FAQ</a></li>
           <li><a href="./contato.html">Contato</a></li>
         </ul>
@@ -52,7 +52,7 @@
 
         <section>
             <div class="container">
-                <div class="flitros">
+                <div class="filtros">
                     <label for="">Tipo de desastre
                         <select name="" id="">
                             <option value="todos">Todos</option>
@@ -82,6 +82,33 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo corrupti praesentium sed.</p>
                         <a class="abrir-modal" href="#modal-enchente">Ver Detalhes</a>
                     </article>
+
+                    <article class="alerta-card alerta">
+                        <div class="alerta-topo">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <span class="nivel">Alerta</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo corrupti praesentium sed.</p>
+                        <a class="abrir-modal" href="#modal-deslizamento">Ver Detalhes</a>
+                    </article>
+
+                    <article class="alerta-card atencao">
+                        <div class="alerta-topo">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <span class="nivel">Atencao</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo corrupti praesentium sed.</p>
+                        <a class="abrir-modal" href="#modal-queimada">Ver Detalhes</a>
+                    </article>
+
+                    <article class="alerta-card baixo">
+                        <div class="alerta-topo">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <span class="nivel">Baixo</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo corrupti praesentium sed.</p>
+                        <a class="abrir-modal" href="#modal-chuva">Ver Detalhes</a>
+                    </article>
                 </div>
 
                 <!-- modal -->
@@ -90,8 +117,55 @@
                         <a class="fechar-modal" href="#listaAlertas " aria-label="Fechar">X</a>
                         <h2>Lorem ipsum dolor sit.</h2>
                         <div class="modal-dados">
-                            <p><strong>Nível:</strong> Emergências</p>
-                            <p><strong>Tipo:</strong> Enchente</p>
+                            <div class="modal-dados-titulo">
+                                <p class="nivel-alerta-emergencia"><strong>Nível:</strong> Emergências</p>
+                                <p><strong>Tipo:</strong> Enchente</p>
+                            </div>
+                            <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
+                            <p><strong>Orientação:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal-deslizamento">
+                    <div class="modal-content">
+                        <a class="fechar-modal" href="#listaAlertas " aria-label="Fechar">X</a>
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <div class="modal-dados">
+                            <div class="modal-dados-titulo">
+                                <p class="nivel-alerta-alerta"><strong>Nível:</strong> Emergências</p>
+                                <p><strong>Tipo:</strong> Enchente</p>
+                            </div>
+                            <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
+                            <p><strong>Orientação:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal-queimada">
+                    <div class="modal-content">
+                        <a class="fechar-modal" href="#listaAlertas " aria-label="Fechar">X</a>
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <div class="modal-dados">
+                            <div class="modal-dados-titulo">
+                                <p class="nivel-alerta-atencao"><strong>Nível:</strong> Emergências</p>
+                                <p><strong>Tipo:</strong> Enchente</p>
+                            </div>
+                            <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
+                            <p><strong>Orientação:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal-chuva">
+                    <div class="modal-content">
+                        <a class="fechar-modal" href="#listaAlertas " aria-label="Fechar">X</a>
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <div class="modal-dados">
+                            <div class="modal-dados-titulo">
+                                <p class="nivel-alerta-baixo"><strong>Nível:</strong> Emergências</p>
+                                <p><strong>Tipo:</strong> Enchente</p>
+                            </div>
                             <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
                             <p><strong>Orientação:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                         </div>
@@ -99,25 +173,6 @@
                 </div>
 
 
-            </div>
-        </section>
-
-        <section>
-            <div class="container cards-grid">
-                <article class="card info-card">
-                  <h3>Lorem, ipsum.</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dolores.</p>
-                </article>
-
-                <article class="card info-card">
-                  <h3>Lorem</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, magnam!</p>
-                </article>
-
-                <article class="card info-card">
-                  <h3>Lorem</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, eveniet praesentium?</p>
-                </article>
             </div>
         </section>
     </main>
