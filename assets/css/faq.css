@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: space-between;
     border: 0;
-    color: var(--color-branco);
+    color: var(--color-offwhite);
     background-color: transparent;
     text-align: left;
     font-size: 1.8rem;
@@ -33,7 +33,7 @@
 
 .faq-resposta {
   margin-top: 1rem;
-  color: var(--muted);
+  color: var(--text-color-segundaria);
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -51,12 +51,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.8rem;
-  height: 2.8rem;
   border-radius: 50%;
-  color: var(--preto);
-  background: var(--caramel);
   transition: transform 0.3s ease;
+  color: var(--color-offwhite);
 }
 
 .faq-item.active .faq-icon {

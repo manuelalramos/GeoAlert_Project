@@ -1,37 +1,16 @@
 // FAQ
 
-const faq1 = document.querySelector("#faq1");
-const faq2 = document.querySelector("#faq2");
-const faq3 = document.querySelector("#faq3");
-const faq4 = document.querySelector("#faq4");
+const faqQuestions = document.querySelectorAll(".faq-pergunta");
 
-function abrirFecharFaq(item){
-    item.classList.toggle("active");
-}
+faqQuestions.forEach((question) => {
+    question.addEventListener("click", function () {
+        const faqItem = question.parentElement;
 
-if (faq1) {
-  faq1.addEventListener("click", function () {
-    abrirFecharFaq(faq1);
-  });
-}
-
-if (faq2) {
-  faq2.addEventListener("click", function () {
-    abrirFecharFaq(faq2);
-  });
-}
-
-if (faq3) {
-  faq3.addEventListener("click", function () {
-    abrirFecharFaq(faq3);
-  });
-}
-
-if (faq4) {
-  faq4.addEventListener("click", function () {
-    abrirFecharFaq(faq4);
-  });
-}
+        faqItem.classList.toggle("active");
+        // Aria-expanded fala para o leitor de tela se a resposta esta aberta ou fechada
+        question.setAttribute("aria-expanded", faqItem.classList.contains("active"));
+    });
+});
 
 // COntato
 
