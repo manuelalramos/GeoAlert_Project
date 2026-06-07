@@ -139,7 +139,7 @@ header{
 .page-hero h1{
     max-width: 78rem;
     margin: 1.4rem 0;
-    font-family: var(--color-branco);
+    font-family: var(--font-primaria);
     font-size: clamp(3.8rem, 7vw, 7rem);
     line-height: 1;
 }

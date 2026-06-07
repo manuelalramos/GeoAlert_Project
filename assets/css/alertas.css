@@ -33,7 +33,7 @@
   color: var(--color-preto);
 }
 
-.pagina-alertas .alertas-lista {
+.pagina-alertas .alerta-lista {
   display: grid;
   gap: 1.4rem;
 }

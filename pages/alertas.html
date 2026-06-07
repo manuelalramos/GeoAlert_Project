@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GeAlert - Alertas</title>
+    <title>GeoAlert - Alertas</title>
 
     <link rel="stylesheet" href="../assets/css/main.css" />
     <script src="../assets/js/script.js" defer></script>
@@ -69,6 +69,7 @@
                         <select name="nivelAlerta" id="nivelAlerta">
                             <option value="todos">Todos</option>
                             <option value="baixo">Baixo</option>
+                            <option value="alerta">Alerta</option>
                             <option value="atencao">Atenção</option>
                             <option value="emergencia">Emergência</option>
                         </select>
@@ -78,7 +79,7 @@
                 </div>
 
                 <div class="alerta-lista" id="listaAlertas">
-                    <article class="alerta-card emergencia">
+                    <article class="alerta-card emergencia" data-tipo="enchente" data-nivel="emergencia">
                         <div class="alerta-topo">
                             <h3>Lorem ipsum dolor sit.</h3>
                             <span class="nivel">Emergência</span>
@@ -87,7 +88,7 @@
                         <a class="abrir-modal" href="#modal-enchente" aria-label="Ver detalhes do alerta de enchente">Ver Detalhes</a>
                     </article>
 
-                    <article class="alerta-card alerta">
+                    <article class="alerta-card alerta" data-tipo="deslizamento" data-nivel="alerta">
                         <div class="alerta-topo">
                             <h3>Lorem ipsum dolor sit.</h3>
                             <span class="nivel">Alerta</span>
@@ -96,16 +97,16 @@
                         <a class="abrir-modal" href="#modal-deslizamento" aria-label="Ver detalhes do alerta de deslizamento">Ver Detalhes</a>
                     </article>
 
-                    <article class="alerta-card atencao">
+                    <article class="alerta-card atencao" data-tipo="queimada" data-nivel="atencao">
                         <div class="alerta-topo">
                             <h3>Lorem ipsum dolor sit.</h3>
-                            <span class="nivel">Atencao</span>
+                            <span class="nivel">Atenção</span>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo corrupti praesentium sed.</p>
                         <a class="abrir-modal" href="#modal-queimada" aria-label="Ver detalhes do alerta de queimada">Ver Detalhes</a>
                     </article>
 
-                    <article class="alerta-card baixo">
+                    <article class="alerta-card baixo" data-tipo="enchente" data-nivel="baixo">
                         <div class="alerta-topo">
                             <h3>Lorem ipsum dolor sit.</h3>
                             <span class="nivel">Baixo</span>
@@ -122,7 +123,7 @@
                         <h2>Lorem ipsum dolor sit.</h2>
                         <div class="modal-dados">
                             <div class="modal-dados-titulo">
-                                <p class="nivel-alerta-emergencia"><strong>Nível:</strong> Emergências</p>
+                                <p class="nivel-alerta-emergencia"><strong>Nível:</strong> Emergência</p>
                                 <p><strong>Tipo:</strong> Enchente</p>
                             </div>
                             <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
@@ -137,8 +138,8 @@
                         <h2>Lorem ipsum dolor sit.</h2>
                         <div class="modal-dados">
                             <div class="modal-dados-titulo">
-                                <p class="nivel-alerta-alerta"><strong>Nível:</strong> Emergências</p>
-                                <p><strong>Tipo:</strong> Enchente</p>
+                                <p class="nivel-alerta-alerta"><strong>Nível:</strong> Alerta</p>
+                                <p><strong>Tipo:</strong> Deslizamento</p>
                             </div>
                             <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
                             <p><strong>Orientação:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
@@ -152,8 +153,8 @@
                         <h2>Lorem ipsum dolor sit.</h2>
                         <div class="modal-dados">
                             <div class="modal-dados-titulo">
-                                <p class="nivel-alerta-atencao"><strong>Nível:</strong> Emergências</p>
-                                <p><strong>Tipo:</strong> Enchente</p>
+                                <p class="nivel-alerta-atencao"><strong>Nível:</strong> Atenção</p>
+                                <p><strong>Tipo:</strong> Queimada</p>
                             </div>
                             <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
                             <p><strong>Orientação:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
@@ -167,8 +168,8 @@
                         <h2>Lorem ipsum dolor sit.</h2>
                         <div class="modal-dados">
                             <div class="modal-dados-titulo">
-                                <p class="nivel-alerta-baixo"><strong>Nível:</strong> Emergências</p>
-                                <p><strong>Tipo:</strong> Enchente</p>
+                                <p class="nivel-alerta-baixo"><strong>Nível:</strong> Baixo</p>
+                                <p><strong>Tipo:</strong> Chuva intensa</p>
                             </div>
                             <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
                             <p><strong>Orientação:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
