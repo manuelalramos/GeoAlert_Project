@@ -38,6 +38,22 @@ footer a:hover {
     font-weight: bold;
 }
 
+.footer-contato {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.footer-contato a,
+.footer-contato p:not(.footer-title) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer-contato i {
+    color: var(--color-amarelo);
+}
+
 .footer-logo img{
     width: 4.4rem;
     margin-bottom: 1rem;
