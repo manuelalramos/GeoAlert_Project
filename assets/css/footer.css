@@ -40,7 +40,8 @@ footer a:hover {
 
 .footer-contato {
     display: grid;
-    gap: 0.8rem;
+    align-content: start;
+    gap: 0.6rem;
 }
 
 .footer-contato a,
