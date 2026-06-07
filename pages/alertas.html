@@ -114,65 +114,137 @@
                         <p>Chuva dentro do esperado, sem risco no momento. Monitoramento contínuo.</p>
                         <a class="abrir-modal" href="#modal-chuva" aria-label="Ver detalhes do alerta de chuva">Ver Detalhes</a>
                     </article>
+
+                    <article class="alerta-card alerta" data-tipo="enchente" data-nivel="alerta">
+                        <div class="alerta-topo">
+                            <h3>Alagamento em avenida — Zona Norte</h3>
+                            <span class="nivel">Alerta</span>
+                        </div>
+                        <p>Pontos de alagamento se formando em vias de grande movimento. Evite deslocamentos pela região.</p>
+                        <a class="abrir-modal" href="#modal-alagamento" aria-label="Ver detalhes do alerta de alagamento">Ver Detalhes</a>
+                    </article>
+
+                    <article class="alerta-card emergencia" data-tipo="deslizamento" data-nivel="emergencia">
+                        <div class="alerta-topo">
+                            <h3>Risco crítico em morro — Comunidade Alta</h3>
+                            <span class="nivel">Emergência</span>
+                        </div>
+                        <p>Movimentação de solo identificada em área ocupada. Recomenda-se saída imediata das casas próximas.</p>
+                        <a class="abrir-modal" href="#modal-encosta" aria-label="Ver detalhes do alerta de risco em encosta">Ver Detalhes</a>
+                    </article>
+
+                    <article class="alerta-card baixo" data-tipo="queimada" data-nivel="baixo">
+                        <div class="alerta-topo">
+                            <h3>Fumaça leve — Parque municipal</h3>
+                            <span class="nivel">Baixo</span>
+                        </div>
+                        <p>Fumaça localizada sem avanço rápido. Equipes podem acompanhar a área preventivamente.</p>
+                        <a class="abrir-modal" href="#modal-fumaca" aria-label="Ver detalhes do alerta de fumaça">Ver Detalhes</a>
+                    </article>
                 </div>
 
                 <!-- Modais dos alertas -->
                 <div class="modal" id="modal-enchente">
                     <div class="modal-content">
-                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de enchente">X</a>
-                        <h2>Lorem ipsum dolor sit.</h2>
+                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de enchente"><i class="fa-solid fa-xmark" aria-hidden="true"></i></a>
+                        <h2>Transbordamento do córrego — Zona Leste</h2>
                         <div class="modal-dados">
                             <div class="modal-dados-titulo">
                                 <p class="nivel-alerta-emergencia"><strong>Nível:</strong> Emergência</p>
                                 <p><strong>Tipo:</strong> Enchente</p>
                             </div>
                             <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
-                            <p><strong>Orientação:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p><strong>Orientação:</strong> Saia de áreas baixas, leve documentos e procure um ponto alto e seguro</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="modal" id="modal-deslizamento">
                     <div class="modal-content">
-                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de deslizamento">X</a>
-                        <h2>Lorem ipsum dolor sit.</h2>
+                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de deslizamento"><i class="fa-solid fa-xmark" aria-hidden="true"></i></a>
+                        <h2>Instabilidade de encosta — Região serrana.</h2>
                         <div class="modal-dados">
                             <div class="modal-dados-titulo">
                                 <p class="nivel-alerta-alerta"><strong>Nível:</strong> Alerta</p>
                                 <p><strong>Tipo:</strong> Deslizamento</p>
                             </div>
-                            <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
-                            <p><strong>Orientação:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p><strong>Resumo:</strong> Solo encharcado em área de encosta.</p>
+                            <p><strong>Orientação:</strong> Evite encostas, observe rachaduras e estalos e deixe o local ao primeiro sinal de movimento.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="modal" id="modal-queimada">
                     <div class="modal-content">
-                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de queimada">X</a>
-                        <h2>Lorem ipsum dolor sit.</h2>
+                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de queimada"><i class="fa-solid fa-xmark" aria-hidden="true"></i></a>
+                        <h2>Foco de calor — Área de mata</h2>
                         <div class="modal-dados">
                             <div class="modal-dados-titulo">
                                 <p class="nivel-alerta-atencao"><strong>Nível:</strong> Atenção</p>
                                 <p><strong>Tipo:</strong> Queimada</p>
                             </div>
-                            <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
-                            <p><strong>Orientação:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p><strong>Resumo:</strong> Focos de calor com tempo seco e vento.</p>
+                            <p><strong>Orientação:</strong> Evite a área, não faça queimadas e acione os bombeiros em caso de fogo próximo.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="modal" id="modal-chuva">
                     <div class="modal-content">
-                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de chuva">X</a>
+                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de chuva"><i class="fa-solid fa-xmark" aria-hidden="true"></i></a>
                         <h2>Lorem ipsum dolor sit.</h2>
                         <div class="modal-dados">
                             <div class="modal-dados-titulo">
                                 <p class="nivel-alerta-baixo"><strong>Nível:</strong> Baixo</p>
                                 <p><strong>Tipo:</strong> Chuva intensa</p>
                             </div>
-                            <p><strong>Resumo:</strong> Risco de transbordamento em áreas próximas ao rio.</p>
-                            <p><strong>Orientação:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p><strong>Resumo:</strong> Chuva moderada sem risco imediato.  </p>
+                            <p><strong>Orientação:</strong> Mantenha-se informado e acompanhe as atualizações do painel.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal-alagamento">
+                    <div class="modal-content">
+                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de alagamento"><i class="fa-solid fa-xmark" aria-hidden="true"></i></a>
+                        <h2>Alagamento em avenida — Zona Norte</h2>
+                        <div class="modal-dados">
+                            <div class="modal-dados-titulo">
+                                <p class="nivel-alerta-alerta"><strong>Nível:</strong> Alerta</p>
+                                <p><strong>Tipo:</strong> Enchente</p>
+                            </div>
+                            <p><strong>Resumo:</strong> Pontos de alagamento em vias de grande movimento.</p>
+                            <p><strong>Orientação:</strong> Evite atravessar áreas alagadas e procure rotas alternativas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal-encosta">
+                    <div class="modal-content">
+                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de risco em encosta"><i class="fa-solid fa-xmark" aria-hidden="true"></i></a>
+                        <h2>Risco crítico em morro — Comunidade Alta</h2>
+                        <div class="modal-dados">
+                            <div class="modal-dados-titulo">
+                                <p class="nivel-alerta-emergencia"><strong>Nível:</strong> Emergência</p>
+                                <p><strong>Tipo:</strong> Deslizamento</p>
+                            </div>
+                            <p><strong>Resumo:</strong> Movimentação de solo em área com moradias próximas.</p>
+                            <p><strong>Orientação:</strong> Saia imediatamente da área de risco e acione a Defesa Civil.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal-fumaca">
+                    <div class="modal-content">
+                        <a class="fechar-modal" href="#listaAlertas" aria-label="Fechar modal de fumaça"><i class="fa-solid fa-xmark" aria-hidden="true"></i></a>
+                        <h2>Fumaça leve — Parque municipal</h2>
+                        <div class="modal-dados">
+                            <div class="modal-dados-titulo">
+                                <p class="nivel-alerta-baixo"><strong>Nível:</strong> Baixo</p>
+                                <p><strong>Tipo:</strong> Queimada</p>
+                            </div>
+                            <p><strong>Resumo:</strong> Fumaça localizada, sem avanço rápido no momento.</p>
+                            <p><strong>Orientação:</strong> Evite atividades com fogo e informe novos focos às autoridades.</p>
                         </div>
                     </div>
                 </div>
