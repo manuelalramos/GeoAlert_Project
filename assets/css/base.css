@@ -9,6 +9,8 @@
   --font-primaria: "Inter", Arial, Helvetica, sans-serif;
   --font-segundaria: Georgia, "Times New Roman", serif;
   --sombras: 0 1rem 2rem rgba(0, 0, 0, 0.18);
+  --shadow-card: var(--sombras);
+  --texto-color: var(--text-color-segundaria);
   --color-preto: #05070b;
   --color-azul-escuro: #223149;
   --color-azul: #496ca8;
