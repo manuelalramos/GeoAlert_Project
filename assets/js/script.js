@@ -37,6 +37,46 @@ faqQuestions.forEach((question) => {
     });
 });
 
+// Alertas
+
+const tipoDesastre = document.querySelector("#tipoDesastre");
+const nivelAlerta = document.querySelector("#nivelAlerta");
+const contadorAlertas = document.querySelector("#contadorAlertas");
+const cardsAlertas = document.querySelectorAll("#listaAlertas .alerta-card");
+
+function atualizarAlertas() {
+    if (!tipoDesastre || !nivelAlerta || !contadorAlertas) {
+        return;
+    }
+
+    let totalVisivel = 0;
+
+    cardsAlertas.forEach((card) => {
+        const tipoSelecionado = tipoDesastre.value;
+        const nivelSelecionado = nivelAlerta.value;
+        const tipoCard = card.dataset.tipo;
+        const nivelCard = card.dataset.nivel;
+
+        const tipoCorresponde = tipoSelecionado === "todos" || tipoSelecionado === tipoCard;
+        const nivelCorresponde = nivelSelecionado === "todos" || nivelSelecionado === nivelCard;
+        const deveMostrar = tipoCorresponde && nivelCorresponde;
+
+        card.hidden = !deveMostrar;
+
+        if (deveMostrar) {
+            totalVisivel += 1;
+        }
+    });
+
+    contadorAlertas.textContent = totalVisivel;
+}
+
+if (tipoDesastre && nivelAlerta && contadorAlertas) {
+    tipoDesastre.addEventListener("change", atualizarAlertas);
+    nivelAlerta.addEventListener("change", atualizarAlertas);
+    atualizarAlertas();
+}
+
 // Contato
 
 const formularioContato = document.querySelector(".contato-formulario");
@@ -83,7 +123,7 @@ if (formularioContato) {
         }
 
         if (email.value.trim() === "" || !emailValido(email.value)) {
-            mostrarErro(email, "Digite um e-mail valido.");
+            mostrarErro(email, "Digite um e-mail válido.");
             formularioValido = false;
         }
 
