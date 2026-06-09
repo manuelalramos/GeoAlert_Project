@@ -138,21 +138,18 @@
   border-color: var(--color-amarelo);
 }
 
-.form-cadastro-alerta.validacao-ativa input:invalid{
-		border-color: var(--color-emergencia);
-}
-
-.form-cadastro-alerta.validacao-ativa input:valid{
-		border-color: var(--color-amarelo);
-}
-
 .erro-cadastro{
 		display: none;
-		color: var(--color-emergencia);
+		color: var(--color-laranja);
+		font-size: 1.4rem;
 		font-weight: 700;
 }
 
-.form-cadastro-alerta.validacao-ativa input:invalid + .erro-cadastro{
+.campo-cadastro.error input{
+		border-color: var(--color-laranja);
+}
+
+.campo-cadastro.error .erro-cadastro{
 		display: block;
 }
 
