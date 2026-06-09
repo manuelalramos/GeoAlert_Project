@@ -2,7 +2,7 @@
 
 <!-- HEADER COM IDENTIDADE VISUAL -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:e3af64,50:df8a5d,100:496ca8&height=170&section=header&text=GeoAlert&fontSize=42&fontColor=05070b&animation=fadeIn" alt="Banner GeoAlert"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:e3af64,50:df8a5d,100:496ca8&height=170&section=header&text=GeoAlert&fontSize=42&fontColor=ffffff&animation=fadeIn" alt="Banner GeoAlert"/>
 </p>
 
 <p align="center">
@@ -134,6 +134,41 @@ HTML5 • CSS3 • JavaScript • Font Awesome • Google Fonts • GitHub
 </p>
 
 O projeto também usa imagens locais, como satélite e fotos das integrantes, para reforçar a proposta visual e organizar melhor a apresentação.
+
+---
+
+## Prints do projeto
+
+
+<p align="center">
+  <img src="./assets/media/print-hero.png" alt="Print da página inicial do GeoAlert" width="720"/>
+  <br>
+  <b>Página inicial</b>
+</p>
+
+<p align="center">
+  <img src="./assets/media/print-alertas.png" alt="Print do painel de alertas do GeoAlert" width="720"/>
+  <br>
+  <b>Painel de alertas com filtros</b>
+</p>
+
+<p align="center">
+  <img src="./assets/media/print-alertas-modal.png" alt="Print do painel de alertas do GeoAlert" width="720"/>
+  <br>
+  <b>Detalhes do painel de alertas</b>
+</p>
+
+<p align="center">
+  <img src="./assets/media/print-faq.png" alt="Print da página de perguntas frequentes do GeoAlert" width="720"/>
+  <br>
+  <b>FAQ interativo</b>
+</p>
+
+<p align="center">
+  <img src="./assets/media/print-contato.png" alt="Print do formulário de contato do GeoAlert" width="720"/>
+  <br>
+  <b>Formulário de contato</b>
+</p>
 
 ---
 

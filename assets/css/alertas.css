@@ -48,6 +48,16 @@
     font-weight: 700;
 }
 
+.pagina-alertas .sem-alertas {
+    padding: 2rem;
+    border: 0.1rem solid var(--linha);
+    border-radius: 1.2rem;
+    color: var(--color-offwhite);
+    background: var(--card-color);
+    font-weight: 700;
+    text-align: center;
+}
+
 .pagina-alertas .alerta-card {
     padding: 2rem;
     border: 0.1rem solid rgba(15, 25, 57, 0.10);
