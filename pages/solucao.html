@@ -131,6 +131,115 @@
           </article>
         </div>
       </section>
+
+      <!-- Simulador e cadastro para receber alerta -->
+       <section>
+        <div class="container">
+          <p class="section-p">Simulação</p>
+          <h2 class="section-title">Simule o risaco e cadastre a sua região</h2>
+          <p class="section-text">Preencha dados simples para ver uma classificação simulada. Depois, cadastre um contato
+          para receber alertas fictícios sobre a sua região.</p>
+
+          <div class="simulador-cadastros-grid">
+            <article class="card simulador-solucao-card">
+              <h3>Simulador rápido</h3>
+              <form class="form-solucao" id="formSimuladorSolucao" novalidate>
+                <label for="tipoSolucao">
+                  <select name="tipoSolucao" id="tipoSolucao">
+                    <option value="Enchente">Enchente</option>
+                    <option value="deslizamento">Deslizamento</option>
+                    <option value="queimada">Queimada</option>
+                  </select>
+                </label>
+
+                <label for="chuvaSolucao">
+                  Chuva caindo agora em mm
+                  <input type="number" id="chuvaSolucao" name="chuvaSolucao" min="0" max="100" value="0">
+                </label>
+
+                <label for="pessoasSolucao">
+                  Pessoas em área de risco
+                  <input type="number" id="pessoasSolucao" name="pessoasSolucao" min="0" max="5000" value="100">
+                </label>
+
+                <button class="botao" type="submit">Simular risco</button>
+
+              </form>
+
+              <div class="resultado-solucao" id="resultadoSolucao">
+              <h3 class="nivel-resultado" id="nivelSolucao">Resultado</h3>
+              <p id="textoSolucao">Preencha os dados e clique em simular.</p>
+              <p id="chamadaSolucao">Depois da simulação, você pode cadastrar sua região ao lado.</p>
+            </div>
+
+            </article>
+
+            <article class="card cadastro-alertas-card">
+              <h3>Receber alertas</h3>
+              <p>Cadastre um contato para receber avisos simulados quando houver risco na sua região.</p>
+
+              <form class="form-solucao form-cadastro-alerta" id="formCadastroAlerta" novalidate>
+                <div>
+                  <label for="nomeAlerta">Nome completo <span>*</span></label>
+                  <input type="text" id="nomeAlerta" name="nomeAlerta" placeholder="Digite seu nome completo aqui" minlength="10" maxlength="80" pattern="[A-Za-zÀ-ÿ\s]+">
+                  <p class="erro-cadastro error-mensagem">Prencha o seu nome</p>
+                </div>
+
+                <div class="campo-cadastro">
+                  <label for="telefoneAlerta">Telefone com DDD <span>*</span></label>
+                  <small>Usamos para enviar SMS e mensages de voz</small>
+                  <input type="tel" id="telefoneAlerta" name="telefoneAlerta" placeholder="99 90000-0000" minlength="11" maxlength="16" pattern="[0-9\s()\-]{10,16}">
+                  <p class="erro-cadastro error-mensagem">Digite um telefone válido com DDD (11 dígitos)</p>
+                </div>
+
+                <div class="campo-cadastro">
+                  <label for="bairroAlerta">Bairro/Comunidade <span>*</span></label>
+                  <input type="text" id="bairroAlerta" name="bairroAlerta" placeholder="Ex.:Interlargos" minlength="3" maxlength="80">
+                  <p class="erro-cadastro error-mensagem">Digite um bairro para sabermos a região</p>
+                </div>
+
+                <fieldset class="campo-cadastro canal-cadastro">
+                  <legend>Canal preferido <span>*</span></legend>
+                  <div class="canal-opcoes">
+                    <label for="canalSmsAlerta">
+                      <input type="radio" id="canalSmsAlerta" name="canalAlerta" value="sms" checked> SMS
+                    </label>
+
+                    <label for="canalTelegramAlerta">
+                      <input type="radio" id="canalTelegramAlerta" name="canalAlerta" value="telegram"> Telegram
+                    </label>
+
+                    <label for="canalWhatsappAlerta">
+                      <input type="radio" id="canalWhatsappAlerta" name="canalAlerta" value="whatsapp"> WhatsApp
+                    </label>
+
+                    <label for="canalLigacaoAlerta">
+                      <input type="radio" id="canalLigacaoAlerta" name="canalAlerta" value="ligacao"> Ligação
+                    </label>
+
+                  </div>
+                </fieldset>
+
+                <button class="botao" type="submit">Cadastrar e receber alertas</button>
+
+              </form>
+
+               <div class="cadastro-feedback" id="cadastroFeedback">
+              <div>
+                <strong>Cadastro concluído</strong>
+                <p id="cadastroTexto">Você vai receber alertas da sua região.</p>
+              </div>
+
+              <button type="button" id="fecharCadastro">Fechar</button>
+            </div>
+            </article>
+
+
+
+          </div>
+
+        </div>
+       </section>
     </main>
 
     <!-- Rodape -->
