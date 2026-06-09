@@ -43,6 +43,7 @@ const tipoDesastre = document.querySelector("#tipoDesastre");
 const nivelAlerta = document.querySelector("#nivelAlerta");
 const contadorAlertas = document.querySelector("#contadorAlertas");
 const cardsAlertas = document.querySelectorAll("#listaAlertas .alerta-card");
+const semAlertas = document.querySelector("#semAlertas");
 
 function atualizarAlertas() {
     if (!tipoDesastre || !nivelAlerta || !contadorAlertas) {
@@ -69,6 +70,10 @@ function atualizarAlertas() {
     });
 
     contadorAlertas.textContent = totalVisivel;
+
+    if (semAlertas) {
+        semAlertas.hidden = totalVisivel !== 0;
+    }
 }
 
 if (tipoDesastre && nivelAlerta && contadorAlertas) {
