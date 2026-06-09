@@ -68,3 +68,235 @@
     transform: scale(1.06);
     transition: 0.5s;
 }
+
+.simulador-cadastro-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;
+    align-items: start;
+    margin-top: 3rem;
+}
+
+.simulador-solucao-card, .cadastro-alertas-card{
+    padding: 2.4rem;
+}
+
+.simulador-solucao-card h3, .cadastro-alertas-card h3 {
+    margin-bottom: 1.4rem;
+    color: var(--color-offwhite);
+}
+
+.cadastro-alertas-card p{
+    color: var(--text-color-segundaria);
+}
+
+.form-solucao{
+    display: grid;
+    gap: 1.4rem;
+}
+
+.form-solucao label {
+    display: grid;
+    gap: 0.7rem;
+    color: var(--color-offwhite);
+    font-weight: 700;
+    font-family: var(--font-primaria);
+}
+
+.form-cadastro-alerta label{
+	display: flex;
+	gap: 0.4rem;
+}
+
+.campo-cadastro {
+    display: grid;
+    gap: 0.7rem;
+}
+
+.campo-cadastro span {
+  color: var(--color-emergencia);
+}
+
+.campo-cadastro small {
+    color: #c8d3ff;
+}
+
+.form-solucao input, .form-solucao select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--linha);
+  border-radius: 10px;
+  background-color: rgba(248, 247, 245, 0.07);
+  color: var(--color-branco);
+}
+
+.form-solucao input[type="radio"] {
+  width: auto;
+}
+
+.form-solucao input:focus, .form-solucao select:focus {
+  border-color: var(--color-amarelo);
+}
+
+.form-cadastro-alerta.validacao-ativa input:invalid{
+		border-color: var(--color-emergencia);
+}
+
+.form-cadastro-alerta.validacao-ativa input:valid{
+		border-color: var(--color-amarelo);
+}
+
+.erro-cadastro{
+		display: none;
+		color: var(--color-emergencia);
+		font-weight: 700;
+}
+
+.form-cadastro-alerta.validacao-ativa input:invalid + .erro-cadastro{
+		display: block;
+}
+
+.canal-cadastro{
+		border: 0;
+}
+
+.canal-cadastro legend{
+		margin-bottom: 1rem;
+		color: var(--color-offwhite);
+		font-weight: 700;
+}
+
+.canal-opcoes{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.2rem;
+}
+
+.canal-opcoes label{
+		display: flex;
+		align-items: center;
+		gap: 0.8rem;
+		padding: 1rem 1.4rem;
+		border: 0.1rem solid var(--linha);
+		border-radius: 1.2rem;
+		color: var(--color-branco);
+		background: rgba(248, 247, 245, 0.04);
+}
+
+.canal-opcoes input{
+		accent-color: var(--color-amarelo);
+}
+
+.form-solucao option{
+		color: var(--color-preto);
+}
+
+.resultado-solucao{
+		margin-top: 1.8rem;
+		padding: 1.8rem;
+		border: 0.1rem solid var(--linha);
+		border-left: 0.6rem solid var(--color-amarelo);
+		border-radius: 1.2rem;
+		background: rgba(248, 247, 245, 0.05);
+}
+
+.resultado-solucao h3{
+		margin-bottom: 0.8rem;
+}
+
+.resultado-solucao p{
+		color: var(--text-color-segundaria);
+}
+
+.resultado-solucao.emergencia{
+		border-left-color: var(--color-emergencia);
+}
+
+.resultado-solucao.alerta{
+		border-left-color: var(--color-alerta);
+}
+
+.resultado-solucao.atencao{
+		border-left-color: var(--color-atencao);
+}
+
+.resultado-solucao.baixo{
+		border-left-color: var(--color-baixo);
+}
+
+.nivel-resultado.baixo{
+		color: var(--color-baixo);
+}
+
+.nivel-resultado.atencao{
+		color: var(--color-atencao);
+}
+
+.nivel-resultado.alerta{
+		color: var(--color-alerta);
+}
+
+.nivel-resultado.emergencia{
+		color: var(--color-emergencia);
+}
+
+.mensagem-pronta{
+		margin-top: 1.8rem;
+		padding: 1.8rem;
+		border: 0.1rem solid var(--linha);
+		border-radius: 1.2rem;
+		background: rgba(248, 247, 245, 0.05);
+}
+
+.mensagem-pronta.oculto{
+		display: none;
+}
+
+.mensagem-pronta h3{
+		margin-bottom: 1rem;
+		color: var(--color-offwhite);
+}
+
+.mensagem-pronta p{
+		margin-bottom: 1.4rem;
+		color: var(--color-branco);
+}
+
+#feedbackCopiar{
+		display: inline-block;
+		margin-left: 1rem;
+		color: var(--color-amarelo);
+		font-weight: 700;
+}
+
+.cadastro-feedback{
+		display: none;
+		margin-top: 1.8rem;
+		padding: 1.8rem;
+		border: 0.1rem solid var(--linha);
+		border-left: 0.5rem solid var(--color-baixo);
+		border-radius: 1.2rem;
+		background: var(--card-color);
+}
+
+.cadastro-feedback.ativo{
+		display: block;
+}
+
+.cadastro-feedback strong{
+		display: block;
+		margin-bottom: 0.3rem;
+		color: var(--color-branco);
+}
+
+.cadastro-feedback p{
+		color: var(--text-color-segundaria);
+}
+
+.cadastro-feedback button{
+		border: 0;
+		color: var(--color-amarelo);
+		background: transparent;
+		font-weight: 700;
+		cursor: pointer;
+}
