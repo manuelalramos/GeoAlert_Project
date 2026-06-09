@@ -91,6 +91,7 @@ function mostrarErro(campo, mensagem) {
     const errorMessage = formGroup.querySelector(".error-mensagem");
 
     formGroup.classList.add("error");
+    campo.setAttribute("aria-invalid", "true");
     errorMessage.textContent = mensagem;
 }
 
@@ -99,6 +100,7 @@ function limparErro(campo) {
     const errorMessage = formGroup.querySelector(".error-mensagem");
 
     formGroup.classList.remove("error");
+    campo.setAttribute("aria-invalid", "false");
     errorMessage.textContent = "";
 }
 
